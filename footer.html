@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.forestessentialsindia.com/pub/static/_cache/merged/ce3f2a58ee55b1c9af59d4db175043bd.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/print.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.forestessentialsindia.com/pub/static/_cache/merged/0f636fc2f9453eb227a19f25bc98a1ea.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/print.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Footer</title>
+    <style>
+        p,
+        a {
+            font-size: 11px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            line-height: 15px;
+            margin: 4px 4px;
+            font-family: "calibre";
+        }
+        
+        .footer-wrap {
+            width: 100%;
+            background-color: #fbf9fa;
+            padding: 50px 0px;
+        }
+        
+        input[type=email] {
+            background: #fbf9fa;
+            border: 1px solid rgb(186, 186, 186);
+            position: relative;
+        }
+        
+        #submit {
+            background: transparent;
+            border: 0px;
+            color: rgb(167, 167, 167);
+            width: 5%;
+            position: absolute;
+            margin-left: -56px;
+        }
+        
+        input[type=text] {
+            background: #fbf9fa;
+            border-width: 1px 1px 0px 1px !important;
+            border-style: solid;
+            border-color: rgb(186, 186, 186);
+        }
+        
+        .subscribe {
+            width: 40%;
+            margin: auto;
+            text-align: left;
+        }
+        
+        .subscribe>h3 {
+            font-size: 36px;
+            font-weight: 500;
+            font-family: "Calluna";
+        }
+        
+        form {
+            margin: 40px auto;
+        }
+        
+        .footer-row {
+            width: 80%;
+            height: 330px;
+            margin: 100px auto;
+            display: grid;
+            grid-template-areas: "a b c d";
+            grid-template-rows: 300px;
+            grid-gap: 20px;
+        }
+        
+        .footer-row>div:nth-child(1) {
+            border-top: 1px solid rgb(223, 223, 223);
+            grid-area: a;
+            padding: 40px 0px;
+        }
+        
+        .footer-row>div:nth-child(2) {
+            border-top: 1px solid rgb(223, 223, 223);
+            grid-area: b;
+            padding: 40px 0px;
+        }
+        
+        .footer-row>div:nth-child(3) {
+            border-top: 1px solid rgb(223, 223, 223);
+            grid-area: c;
+            padding: 40px 0px;
+        }
+        
+        .footer-row>div:nth-child(4) {
+            border-top: 1px solid rgb(223, 223, 223);
+            grid-area: d;
+            padding: 40px 0px;
+        }
+        
+        .footer-row div>img {
+            padding: 30px;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 50%;
+        }
+        
+        .footer-row div h3 {
+            font-size: 27px;
+            font-weight: 500;
+            font-family: "Calluna";
+            margin-top: 50px;
+            padding-bottom: 10px;
+        }
+        
+        .footer-row div p {
+            text-transform: none;
+            letter-spacing: 2px;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: "calibre";
+        }
+        
+        .footer-nav {
+            list-style: none;
+            padding: 20px 0px;
+        }
+        
+        .footer-nav li {
+            list-style: none;
+            padding: 3px 0px;
+        }
+        
+        #social-icons a {
+            font-size: 35px;
+            color: rgb(159, 159, 159);
+            text-align: left;
+        }
+        
+        #social-icons .fa-facebook-square:hover {
+            color: #3B5998;
+            text-decoration: none;
+        }
+        
+        #social-icons .fa-instagram:hover {
+            color: #f40083;
+            text-decoration: none;
+        }
+        
+        #social-icons .fa-twitter-square:hover {
+            color: #55ACEE;
+            text-decoration: none;
+        }
+        
+        #social-icons .fa-linkedin-square:hover {
+            color: #007bb5;
+            text-decoration: none;
+        }
+        
+        #social-icons .fa-youtube-square:hover {
+            color: #bb0000;
+            text-decoration: none;
+        }
+        
+        .footer-row2 {
+            width: 1240px;
+            height: 100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "a b";
+            grid-template-rows: 100px;
+            grid-gap: 20px;
+        }
+        
+        .footer-row2>div:nth-child(1) {
+            border-top: 1px solid rgb(223, 223, 223);
+            grid-area: a;
+            padding: 20px 0px;
+        }
+        
+        .footer-row2>div:nth-child(2) {
+            border-top: 1px solid rgb(223, 223, 223);
+            grid-area: b;
+            padding: 20px 0px;
+        }
+        
+        .arrow {
+            border: solid rgb(148, 148, 148);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        
+        @media only screen and (min-width: 820px) and (max-width: 1250px) {
+            .subscribe {
+                width: 50%;
+                margin: auto;
+                text-align: left;
+            }
+            .footer-row {
+                width: 800px;
+                height: 600px;
+                margin: 20px auto;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "a b" "c d";
+                grid-gap: 20px;
+            }
+            .footer-row>div:nth-child(1) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: a;
+                padding: 20px 0px;
+            }
+            .footer-row>div:nth-child(2) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: b;
+                padding: 20px 0px;
+            }
+            .footer-row>div:nth-child(3) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: c;
+                padding: 20px 0px;
+            }
+            .footer-row>div:nth-child(4) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: d;
+                padding: 20px 0px;
+            }
+            .footer-row2 {
+                width: 800px;
+                height: 600px;
+                margin: 220px auto auto auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "a b";
+                grid-template-rows: 300px;
+                grid-gap: 20px;
+            }
+            .footer-row2>div:nth-child(1) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: a;
+                padding: 20px 0px;
+            }
+            .footer-row2>div:nth-child(2) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: b;
+                padding: 20px 0px;
+            }
+        }
+        
+        @media only screen and (max-width: 819px) {
+            .subscribe {
+                width: 70%;
+                margin: auto;
+                text-align: left;
+            }
+            .footer-row {
+                width: 70%;
+                height: 20%;
+                margin: 20px auto;
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas: "a" "b" "c" "d";
+                grid-gap: 20px;
+            }
+            .footer-row>div:nth-child(1) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: a;
+                padding: 20px 0px;
+            }
+            .footer-row>div:nth-child(2) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: b;
+                padding: 20px 0px;
+            }
+            .footer-row>div:nth-child(3) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: c;
+                padding: 20px 0px;
+            }
+            .footer-row>div:nth-child(4) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: d;
+                padding: 20px 0px;
+            }
+            .footer-row2 {
+                width: 70%;
+                height: 30%;
+                margin: 0px auto auto auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-areas: "a" "b";
+                grid-template-rows: 100px 20px;
+                grid-gap: 20px;
+            }
+            .footer-row2>div:nth-child(1) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: a;
+                padding: 20px 0px;
+            }
+            .footer-row2>div:nth-child(2) {
+                border-top: 1px solid rgb(223, 223, 223);
+                grid-area: b;
+                padding: 20px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer-wrap">
+        <div class="subscribe">
+            <p>NEWSLETTER</p>
+            <p style="border: 1px solid black; width: 25px;background: black;">
+            </p>
+            <h3>Keep In Touch</h3>
+            <form action="">
+                <input type="text" id="name" placeholder="NAME">
+                <input type="email" id="email" placeholder="EMAIL">
+                <button id="submit"><i class="arrow right"></i></button>
+            </form>
+        </div>
+
+        <div class="footer-row">
+            <div>
+                <img src="https://images.forestessentialsindia.com/pub/media/leaf-icon.png" alt="">
+                <h3>100% Ayurvedic</h3>
+                <p>Our products are certified 100% natural and inspired by Ayurveda recipes by the ministry of AYUSH. We conform to the highest quality control standards.</p>
+            </div>
+            <div>
+                <img src="https://images.forestessentialsindia.com/pub/media/paw-icon.png" alt="">
+                <h3>Cruelty free</h3>
+                <p>Our products are non-toxic, not tested on animals, and unadulterated without the use of parabens, sulphates, chemical sunscreens, and synthetic fragrances.</p>
+            </div>
+            <div>
+                <img src="https://images.forestessentialsindia.com/pub/media/box-icon.png" alt="">
+                <h3>Free shipping</h3>
+                <p>On all International orders of INR 9999/- and above, and on all Domestic orders* T&C Apply.</p>
+            </div>
+            <div>
+                <img src="https://images.forestessentialsindia.com/pub/media/hand-icon.png" alt="">
+                <h3>Made in India</h3>
+                <p>We celebrate the rich knowledge and heritage of India through our products, sourcing rare ingredients from different parts of the country.</p>
+            </div>
+        </div>
+
+        <div class="footer-row">
+            <div>
+                <p>SHOP</p>
+                <ul class="footer-nav mobilemenu">
+                    <li><a href="/natural-makeup.html">Makeup</a></li>
+                    <li><a href="/facial-care.html">Facial Care</a></li>
+                    <li><a href="/bath-and-body-care.html">Body Care</a></li>
+                    <li><a href="/hair-care.html">Hair Care</a></li>
+                    <li><a href="/collections/for-men.html">Men's Care</a></li>
+                    <li><a href="/collections/mother-s-baby-range.html">Mother &amp; Baby Care</a></li>
+                    <li><a href="/wellness.html">Wellness</a></li>
+                    <li><a href="/gifting-indulgences.html">Gifting</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>ABOUT</p>
+                <ul class="footer-nav mobilemenu">
+                    <li><a href="https://www.forestessentialsindia.com/about-us/">Our Philosophy</a></li>
+                    <li><a href="/social-responsibility">Social Responsibility</a></li>
+                    <li><a href="/media-and-press">Media &amp; Press</a></li>
+                    <li><a href="/payment-policy">Policies</a></li>
+                    <li><a href="/terms-and-conditions">Terms</a></li>
+                    <li><a href="/faqs">FAQs</a></li>
+                    <li><a href="/soundarya-club">Soundarya  Club FAQs</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>QUICK LINKS</p>
+                <ul class="footer-nav uppercase mobilemenu">
+                    <li><a href="/customer/account/login">My Account</a></li>
+                    <li><a href="http://loyalty.forestessentialsindia.com/" target="_blank">Soundarya Club Sign In</a></li>
+                    <li><a href="/ayurvedic-doctor-interaction">Ayurvedic doctor interaction</a></li>
+                    <li><a href="/customize-your-own-cream">Customize a Cream</a></li>
+                    <li><a href="/retail-store-locator/">Stores</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/blog/ingredients">Our Ingredients</a></li>
+                    <li><a href="https://www.forestessentials.co.uk/" target="_blank">Forest Essentials UK</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>CONTACT</p><br>
+                <p>Email : <br> service@forestessentialsindia.com</p><br>
+                <p>Phone : <br> +91-8010238475</p><br>
+                <p>Contact Us : <br> </p><br>
+                <p style="border-bottom: 1px solid rgb(213, 213, 213);"></p><br>
+                <p>FOLLOW</p>
+                <p id="social-icons">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook-square"></a>
+                    <a href="#" class="fa fa-youtube-square"></a>
+                    <a href="#" class="fa fa-twitter-square"></a>
+                    <a href="#" class="fa fa-linkedin-square"></a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-row2">
+            <div>
+                <p>PAYMENT METHOD</p><br>
+                <img src="https://images.forestessentialsindia.com/pub/media/payment-method-new.png" alt="">
+            </div>
+            <div>
+                <P>©Forest Essentials</P>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
