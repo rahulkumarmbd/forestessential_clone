@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signup.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <p id="one">Create An Account</p>
+        <br>
+        <div id="two">
+            
+            <samp id="three"><a href="#" class="fa fa-facebook"></a> Register With Facebook</samp>
+            
+            <samp id="fore"><a href="#" class="fa fa-google"></a>Register with Google</samp>
+    </div>
+    <br>
+    <br>
+    <b
+    <p id="five">PERSONAL INFORMATION</p>
+    <hr>
+    <form>
+    <div id="t">
+        <label id="five">TITLE *</label>
+        <div id="a">
+         <select id="aa">
+             <option value="">PLEASE SELECT</option>
+             <option value=""></option>
+             <option value="Mr.">Mr.</option>
+             <option value="Ms">Ms.</option>
+             <option value="Mrs.">Mrs.</option>
+         </select>
+        </div>
+    </div>
+    <br>
+    <div id="t1">
+       <div id="t">
+           <label id="five">FIRST NAME*</label>
+        <div id="a">
+            <input id="firstname" type="text" placeholder="" />
+        </div>
+       </div> 
+       <div id="t">
+        <label id="five">SECOUND NAME*</label>
+     <div id="a">
+         <input id="secoundname" type="text" placeholder="" />
+     </div>
+    </div> 
+    </div>
+    <br>
+    <div id="t">
+           <label id="five">EMAIL ADDRESS*</label>
+        <div id="a">
+            <input id="email_address" type="email" name="email" autocomplete="email"  value="" title="Email" class="input-text" data-mage-init='{"mage/trim-input":{}}' data-validate="{required:true, 'validate-email':true}">
+        </div>
+       </div>
+     <br>
+     <div id="t2">
+        <label id="five">PHONE NUMBER*</label>
+         <div id="t1">
+            <input id="number" type="number" placeholder="" /> 
+         </div>
+     </div> 
+     <br>
+     <p id="five">SECURITY</p> 
+     <hr>
+     <br>
+     <div id="t1">
+        <div id="t">
+            <label id="five">CREATE PASSWORD *</label>
+         <div id="a">
+            <input type="password" name="password" id="password"
+            title="Password"
+            class="input-text"
+            data-password-min-length="10"
+            data-password-min-character-sets="3"
+            data-validate="{required:true, 'validate-customer-password':true}"
+            autocomplete="off">
+         </div> 
+        </div> 
+        <div id="t">
+         <label id="five">CONFIRM PASSWORD*</label>
+      <div id="a">
+        <input type="password" name="password_confirmation" title="Confirm&#x20;Password" id="passwordconfirmation" class="input-text" data-validate="{required:true, equalTo:'#password'}" autocomplete="off">
+      </div>
+     </div> 
+     </div>
+         <p>Password Strength:NO Password</p>
+       
+     <br>
+    
+     <div id="t2">
+         <input type="checkbox" />
+         <label id="five">SIGN UP TO NEWSLETTER</label>
+     </div>
+   <br>
+   <P>* Required Fields</P>
+   <br>
+   <div id="t2">
+    <button id="aaa" onclick="">CREATE AN ACCOUNT</button>
+ </div> 
+</form>
+</body>
+</html>
+<script src="signup.js">
+
+</script>
