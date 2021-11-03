@@ -1,8 +1,7 @@
 document.querySelector("form").addEventListener("click", signUp);
  var userArr= JSON.parse(localStorage.getItem("userData")) || []
 
-function signUp(event) {
-    event.preventDefault();
+function signUp() {
     var titel = document.getElementById("aa").value;
     var firstName = document.getElementById("firstname").value;
     var secoundName = document.getElementById("secoundname").value;
@@ -11,7 +10,7 @@ function signUp(event) {
     var pass = document.getElementById("password").value;
     var passwordConfirmation = document.getElementById("passwordconfirmation").value;
 var userC={
-   titel: aa,
+   titel: titel,
    firstName: firstName,
    secoundName: secoundName,
    emailAddress: emailAddress,

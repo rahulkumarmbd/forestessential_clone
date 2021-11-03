@@ -10,24 +10,26 @@
 }
 #two{
     margin: auto;
-    width: 600px;
+    width: 500px;
     padding: 10px;
     text-align: center;
+    display: inline-flex;
+   margin-left: 200px;
 }
 #three{
-    border: 1px solid #1e4389;
     font-size: 15px; 
-    background: #1e4389;
+    background: #3b5998;
     color: white;
     vertical-align:top; 
-    padding: 10px;
+    width: 200px;
+    padding: 2px;
 }
 #fore{
     font-size: 15px; 
     background: #df4b38;
     color: white;
-    padding: 10px;
     vertical-align:top;
+    width: 200px;
 }
 #five{
     letter-spacing: 1.8px;
