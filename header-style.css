@@ -7,6 +7,7 @@ body {
     line-height: 15px;
     color: #424041;
     background-color: white;
+    font-family: "calibre";
 }
 
 p,
@@ -16,9 +17,11 @@ a {
     text-transform: uppercase;
     line-height: 15px;
     margin: 4px 4px;
+    font-family: "calibre";
 }
 
 header {
+    background-color: #fbf9fa;
     display: grid;
     grid-template-areas: "1 1 1", "2 2 2", "3 3 3";
 }
@@ -47,6 +50,7 @@ header>.wrap-div {
 }
 
 header>.bottom-div {
+    background-color: #fbf9fa;
     grid-area: 3;
     text-align: center;
     display: flex;
@@ -103,9 +107,11 @@ li {
 .dropdown {
     float: left;
     overflow: hidden;
+    background-color: #fbf9fa;
 }
 
 .dropdown .dropbtn {
+    background-color: #fbf9fa;
     font-size: 16px;
     border: none;
     outline: none;
@@ -127,7 +133,7 @@ li {
     width: 100%;
     left: 0;
     z-index: 1;
-    background: white;
+    background-color: #fbf9fa;
     padding: 20px 0px 0px 0px;
 }
 
@@ -152,7 +158,7 @@ img {
     float: left;
     width: 48%;
     padding: 10px;
-    background-color: white;
+    background-color: #fbf9fa;
     height: 200px;
 }
 
@@ -598,4 +604,189 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#show-on-mobile {
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:980px) and (max-width: 1290px) {
+    header>.wrap-div {
+        grid-area: 2;
+        height: 90px;
+        width: 900px;
+        padding: 10px 0px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "a b c";
+    }
+    header>.bottom-div {
+        display: none;
+    }
+    .wrap-div>.left-div {
+        grid-area: a;
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+    .wrap-div>.center-div {
+        grid-area: b;
+        height: 90px;
+        text-align: center;
+    }
+    .wrap-div>.right-div {
+        grid-area: c;
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+    .dropdown .dropbtn {
+        background-color: #fbf9fa;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 9px;
+        /* background-color: inherit; */
+        font: inherit;
+        margin: 0;
+    }
+    #show-on-mobile {
+        display: block;
+    }
+    #show-on-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 979px) {
+    header>.wrap-div {
+        grid-area: 2;
+        width: 590px;
+        height: 70px;
+        padding: 10px 0px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "a b c";
+    }
+    header>.bottom-div {
+        display: none;
+    }
+    .wrap-div>.left-div {
+        grid-area: a;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .wrap-div>.center-div {
+        grid-area: b;
+        height: 60px;
+        text-align: center;
+    }
+    .wrap-div>.right-div {
+        grid-area: c;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    .dropdown .dropbtn {
+        background-color: #fbf9fa;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 9px;
+        /* background-color: inherit; */
+        font: inherit;
+        margin: 0;
+    }
+    #show-on-mobile {
+        display: block;
+    }
+    #show-on-desktop {
+        display: none;
+    }
+    .left-div>ul>li,
+    .right-div>ul>li {
+        display: inline;
+        margin: 0px 8px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width: 599px) {
+    header>.wrap-div {
+        grid-area: 2;
+        height: 60px;
+        width: 350px;
+        padding: 10px 0px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100px 150px 100px;
+        grid-template-areas: "a b c";
+    }
+    .fa {
+        font-size: 13px !important;
+    }
+    .topbar p {
+        font-size: 12px;
+        font-family: "calibre";
+    }
+    header>.bottom-div {
+        display: none;
+    }
+    .wrap-div>.left-div {
+        grid-area: a;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .wrap-div>.center-div {
+        grid-area: b;
+        height: 40px;
+        text-align: center;
+    }
+    .wrap-div>.right-div {
+        grid-area: c;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    #show-on-mobile {
+        display: block;
+    }
+    #show-on-desktop {
+        display: none;
+    }
+    .left-div>ul>li,
+    .right-div>ul>li {
+        display: inline;
+        margin: 0px 4px;
+    }
+    header>.topbar {
+        grid-area: 1;
+        padding: 5px;
+        height: 30px;
+        background-color: #333333;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .topbar p {
+        font-size: 8px;
+        line-height: 10px;
+    }
 }
