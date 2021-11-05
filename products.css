@@ -37,6 +37,7 @@
 .products-view-all-div {
   display: flex;
   align-items: center;
+  cursor: pointer;
   padding-right: 20px;
 }
 .all-time-bestsellers {
