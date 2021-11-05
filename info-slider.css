@@ -11,12 +11,25 @@
   }
   #info-slider {
     background-image: url(https://images.forestessentialsindia.com/pub/media/testimonials/ayurvedic-testimonial02nove21.jpg);
-    margin: 50px 0px;
+    margin: 20px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 98px 50px;
     background-position: center;
     display: flex;
+  }
+  .info-slider-bar-top{
+    width: 20px;
+    height: 1px;
+    margin-bottom: 5px;
+    border-top: 1px solid black;
+
+  }
+  .info-slider-heading{
+    padding: 0px 50px;
+  }
+  .info-slider-top-para,.info-slider-bar-top-div{
+    padding: 0px 50px;
   }
   .slide-info {
     width: 25%;

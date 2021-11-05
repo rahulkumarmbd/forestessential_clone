@@ -1,0 +1,67 @@
+.appointmentDiv {
+    background-color: #fbf9f9;
+    margin: 100px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .appointmentDiv > div {
+    width: 93%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: auto;
+    justify-content: space-between;
+  }
+  .info-appointment {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  .appointment-info-bar {
+    height: 1px;
+    width: 20px;
+    border-bottom: 1px solid black;
+  }
+  .calluna {
+    font-size: 36px;
+    letter-spacing: 1.4px;
+    font-family: "Calluna";
+    color: black;
+  }
+  .calibre {
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    color: black;
+  }
+  .appointment-bar {
+    width: fit-content;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+  }
+  .info-appointment-info > p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 24px;
+  }
+  .appointment-heading > p {
+    font-size: 36px;
+    letter-spacing: 1.8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 48px;
+    font-family: "Calluna";
+  }
+  @media screen and (max-width: 992px) {
+    .appointmentDiv > div {
+      display: grid;
+      grid-template-columns: 96%;
+      grid-template-rows: auto auto;
+    }
+    .appointment-heading > p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }

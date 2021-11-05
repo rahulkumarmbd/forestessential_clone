@@ -1,0 +1,88 @@
+.calluna {
+  font-size: 36px;
+  letter-spacing: 1.4px;
+  font-family: "Calluna";
+  color: black;
+}
+.calibre {
+  letter-spacing: 1.8px;
+  font-family: "calibre";
+  font-size: 12px;
+  line-height: 1;
+  color: black;
+}
+.product-item-heart {
+  font-size: 23px;
+  width: fit-content;
+}
+.products-items {
+  width: 96%;
+  margin: auto;
+  padding-bottom: 200px;
+}
+.products-items-bar {
+  height: 1px;
+  width: 20px;
+  border-bottom: 1px solid black;
+}
+.products-view-all {
+  width: fit-content;
+  padding: 10px 0px;
+  border-bottom: 1px solid black;
+}
+.products-all-time {
+  display: flex;
+  justify-content: space-between;
+}
+.products-view-all-div {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+.all-time-bestsellers {
+  margin: 16px 0px;
+}
+.products-items-main {
+  display: grid;
+  grid-template-columns: repeat(4, 24.2%);
+  grid-template-rows: auto;
+  grid-gap: 1%;
+}
+.product-item {
+  background-color: #fbf9f9;
+  padding: 8px;
+}
+.product-img-div > img {
+  width: 100%;
+  cursor: pointer;
+}
+.product-item-bestseller {
+  margin: 20px 0px;
+}
+.product-item-gold-info {
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.product-item-weight {
+  letter-spacing: 2px;
+  margin-top: 0px;
+}
+.product-item-weight-div {
+  height: 100px;
+}
+.product-item-add-to-bag {
+  border: 1px solid black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.product-item-add-to-bag-text {
+  margin: 2px;
+  margin-top: 5px;
+}
