@@ -1,0 +1,263 @@
+<head>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+    href="https://cdn.forestessentialsindia.com/pub/static/_cache/merged/0f636fc2f9453eb227a19f25bc98a1ea.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen and (min-width: 768px)"
+    href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="print"
+    href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/print.min.css"
+  />
+
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style >
+
+label{
+
+      letter-spacing: 1.8px;
+      font-family: "calibre";
+      font-size:11px;
+      line-height: 1;
+      color:grey;
+      font-weight: 390;
+
+  
+
+}
+#box {
+width: 99%;
+height: 830px;
+border: solid black;
+background-color: white;
+margin-left: 10px;
+}
+#box1 {
+width: 80%;
+height: 740px;
+background-color: white;
+margin-left: 180px;
+margin-top: 10px;
+border: 0px;
+border: 1px solid red;
+}
+.container2 {
+border: 1px solid blue;
+display: grid;
+width: 99%;
+margin-top: 15px;
+padding: 2px;
+grid-template-columns: 400px 400px;
+grid-template-rows: 290px;
+grid-gap: 20px;
+height: 150px;
+}
+
+
+@media (min-width:0px) and (max-width:500px){
+
+  .container2{
+border: 1px solid blue;
+display: grid;
+width: 80%;
+
+grid-template-columns: 400px ;
+grid-template-rows: 90px 90px ;
+
+height: 250px;
+padding-right: 10px;
+padding-right: 20px;
+padding:5px;
+}
+
+}
+
+@media (min-width:500px) and (max-width:1000px){
+
+.container2{
+border: 1px solid blue;
+display: grid;
+width: 80%;
+
+grid-template-columns: 400px ;
+grid-template-rows: 90px 90px ;
+
+height: 250px;
+
+padding-right: 20px;
+padding:5px;
+}
+
+#box {
+width: 99%;
+height: 830px;
+border: solid black;
+background-color: white;
+margin-left: 10px;
+}
+input {
+padding: 5px;
+border: 1px solid grey;
+width: 380px;
+height: 40px;
+}
+}
+
+
+
+
+
+input {
+padding: 5px;
+border: 1px solid grey;
+width: 380px;
+height: 40px;
+}
+
+button {
+margin-left:5px;
+margin-top: 19px;
+width: 400px;
+height: 48px;
+background-color: white;
+}
+#button:hover{
+background-color: black;
+color: white;
+
+}
+
+img {
+margin-left: 200px;
+display: inline-block;
+}
+
+#mainDivTop {
+display: flex;
+margin: auto;
+    width: 700px;
+    padding: 5px;
+    text-align: center;
+   margin-left: 300px;
+
+
+
+}
+
+#facebook{
+    font-size: 15px; 
+    background: #3b5998;
+    color: white;
+    vertical-align:top; 
+    width: 200px;
+    padding: 2px;
+
+}
+#google{
+    font-size: 15px; 
+    background: #df4b38;
+    color: white;
+    vertical-align:top; 
+    width: 200px;
+    padding: 2px;
+
+}
+#paragrapgh{
+  margin-top: 30px;
+  margin-left: 8px;  
+}
+.box3{
+  width:400px;
+  height: 90px;
+  border: 1px solid blue;
+  margin-left: 3px;
+  margin-top: 35px;
+}
+.fa {
+padding: 10px;
+font-size: 22px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+  </style>
+
+</head>
+<body>
+  <div id="box">
+      <div id="box1">
+          
+           <h2>Welcome, please sign in</h2>
+          <div id ="mainDivTop">  
+              <div id="Facebook">
+                  <a href="#" class="fa fa-facebook"> </a> Register With Facebook
+
+
+              </div>
+              <div id= "google">
+                  <a href="#" class="fa fa-google"></a> Register With Google
+
+              </div>
+          </div>
+          
+          
+          <p>EXISTING CUSTOMERS</p>
+          <hr>
+          <div class="container2"> 
+              <div>
+              <label id="username1">EMAIL ADDRESS</label>  <br> <br>   
+              <input id="email" height: type="text" placeholder="enter your email"/>
+              <br>
+              </div>
+
+              <div>
+               <label id="username1">PASSWORD</label>  <br>   <br>
+               <input id="pass" type="text" placeholder="enter ur password"/>
+              <br>
+                 
+              </div>
+             
+          </div>
+          <button id="button">SIGN IN</button>
+          <p id="paragrapgh">Forget Your Password?</p>
+          <p id="paragrapgh">NEW CUSTOMERS</p>
+
+          <hr>
+           <div class="box3">
+          <p id="paragrapgh" >Creating an account has many benefits: check out faster, 
+              keep more than one address, track orders and more.</p>
+          </div>
+              <button id="button">CREATE AN ACCOUNT</button>
+  
+      </div>
+  </div>
+</body>
+</html>
+
+<script src="sigin.js"></script>
