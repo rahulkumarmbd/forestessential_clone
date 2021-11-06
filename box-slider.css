@@ -36,26 +36,19 @@
     line-height: 1;
   }
   .shop-now-slider {
-    padding: 13px 0px;
+    padding: 10px 0px;
+    width: fit-content;
+    border-bottom: 1px solid black;
   }
   .slider-product-name {
     padding-top: 25px;
-  }
-  .box-slider-right-arrow {
-    margin-left: 5%;
-    font-weight: 900;
-  }
-  .box-slider-bottom-bar {
-    width: 32%;
-    border-top: 1px solid black;
   }
   .slider-box-prev-btn,
   .slider-box-next-btn {
     cursor: pointer;
     position: absolute;
-    top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: 70px;
     padding: 11px;
     font-weight: bold;
     font-size: 18px;
@@ -69,7 +62,4 @@
   .slider-box-prev-btn:hover,
   .slider-box-next-btn:hover {
     background-color: rgba(0, 0, 0, 0.2);
-  }
-  .slide-box-active {
-    display: block;
   }
