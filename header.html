@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdn.forestessentialsindia.com/pub/static/_cache/merged/0f636fc2f9453eb227a19f25bc98a1ea.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 200px)" href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="header-style.css">
+    <title>Forest Essentials India</title>
+    <style>
+        .sidenavwrap {
+            padding: 10px;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 10px;
+            font-family: "calibre";
+            color: grey;
+            overflow: scroll;
+        }
+        
+        .sidenav a {
+            font-family: "calibre";
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 12px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: black;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            font-size: 36px;
+            margin-left: 100px;
+        }
+        
+        .mobile-logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .mobile-logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        input[type=text] {
+            background: #fbf9fa;
+            border: 1px solid rgb(209, 209, 209);
+            position: relative;
+            width: 95%;
+            height: 40px;
+            padding-left: 10px;
+        }
+        
+        #submit {
+            background: transparent;
+            border: 0px;
+            color: rgb(167, 167, 167);
+            width: 5%;
+            position: absolute;
+            margin-left: -30px;
+            margin-top: -5px;
+        }
+        
+        .arrow {
+            border: solid rgb(148, 148, 148);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        
+        .mobile-nav {
+            margin-top: 20px;
+            overflow: auto;
+        }
+        
+        .mobile-nav ul li:nth-child(1) {
+            border-top: 1px solid rgb(216, 216, 216);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 05px;
+            width: 95%;
+        }
+        
+        .mobile-nav ul li>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .mobile-nav ul li:nth-of-type(n) {
+            border-bottom: 1px solid rgb(216, 216, 216);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 05px;
+            width: 95%;
+        }
+        
+        .nav-icons {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        #hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main" class="sticky">
+        <!-- Mobile menu Only visible in tablet and mobile -->
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenavwrap">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="mobile-logo ">
+                    <div><img src="https://images.forestessentialsindia.com/pub/media/new-fe.png" alt=""></div>
+                    <div>
+                        <h3>LOGIN / REGISTER</h3>
+                    </div>
+                </div><br>
+                <div id="search-form ">
+                    <form action="">
+                        <input type="text" id="search" placeholder="SEARCH THE WEB STORE">
+                        <button id="submit"><i class="fa fa-search" aria-hidden="true" style="font-size:16px;color: #848484;"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-nav">
+                    <ul>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                        <li>
+                            <div><img src="icons/svg1.png" alt="" class="nav-icons">&nbsp;&nbsp; <span> BESPOKE SERVICES</span></div>
+                            <div><i class="arrow right"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ends here -->
+
+        <div class="topbar" id="topbar">
+            <p>COMPLIMENTARY HAIR CARE RITUAL WORTH ₹ 875/- ON ALL PURCHASES ABOVE ₹ 4,999/-</p>
+        </div>
+        <div class="wrap-div" id="myHeader">
+            <div class="left-div" id="left-div">
+                <ul id="show-on-desktop">
+                    <li><i class="fa fa-search" aria-hidden="true" style="font-size:16px;color: #848484;"></i></li>
+                    <li>store</li>
+                    <li>INR</li>
+                </ul>
+
+                <ul id="show-on-mobile">
+                    <li><i class="fa fa-bars" style="font-size:16px;color: #848484;" onclick="openNav()"></i></li>
+                    <li><i class="fa fa-search" aria-hidden="true" style="font-size:16px;color: #848484;"></i></li>
+                </ul>
+            </div>
+            <div class="center-div" id="center-div">
+                <img src="https://images.forestessentialsindia.com/pub/media/logo/stores/2/FE-Logo_1.png" id="logo" alt="">
+            </div>
+            <div class="right-div" id="center-div">
+                <ul style=" margin-left: auto;" id="show-on-desktop">
+                    <li>Account</li>
+                    <li>Wishlist</li>
+                    <li><i class="fa fa-shopping-cart" style="font-size:18px;color: black;"></i></li>
+                </ul>
+                <ul id="show-on-mobile" style=" margin-left: auto;">
+                    <li><i class="fa fa-user-circle-o" style="font-size:16px;color: black;"></i></li>
+                    <li><i class="fa fa-heart-o" style="font-size:16px;color: black;"></i></li>
+                    <li><i class="fa fa-shopping-cart" style="font-size:18px;color: black;"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-div ">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Bespoke services 
+                      
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Facial care
+                      
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">store
+                      
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Body care
+                      
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">hair care
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Make up
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Wellness
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Gifting
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Discover
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Discover
+                    </button>
+                        <div class="dropdown-content">
+
+                            <div class="row">
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Ayurvedic-Consult-Top-Nav.png" alt="" style="object-fit: cover;">
+                                </div>
+                                <div class="column">
+                                    <img src="https://images.forestessentialsindia.com/pub/media/megamenu/Customised_Cream_764x188.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+</body>
+
+</html>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "350px";
+        document.querySelector("body").style.marginLeft = "350px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.querySelector("body").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var topbar = document.getElementById("topbar");
+    var wrapdiv = document.getElementById("myHeader");
+    var rightdiv = document.getElementById("right-div");
+    var leftdiv = document.getElementById("left-div");
+    var centerdiv = document.getElementById("center-div");
+    var sticky = topbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            topbar.setAttribute('id', "hide")
+                // wrapdiv.style.height = "80px"
+                // rightdiv.style.height = "80px"
+                // leftdiv.style.height = "80px"
+                // centerdiv.style.height = "80px"
+        } else {
+            topbar.removeAttribute("id")
+        }
+    }
+</script>
