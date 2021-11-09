@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+    href="https://cdn.forestessentialsindia.com/pub/static/_cache/merged/ce3f2a58ee55b1c9af59d4db175043bd.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen and (min-width: 768px)"
+    href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="print"
+    href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/print.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+    href="https://cdn.forestessentialsindia.com/pub/static/_cache/merged/ce3f2a58ee55b1c9af59d4db175043bd.min.css"
+  />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen and (min-width: 768px)"
+    href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="print"
+    href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/print.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="signup.css" />
     <title>Document</title>
@@ -18,12 +49,13 @@
     </div>
     <br>
     <br>
-    <b
+    <br>
     <p id="five">PERSONAL INFORMATION</p>
     <hr>
     <form>
     <div id="t">
-        <label id="five">TITLE *</label>
+        <p id="five">TITLE *</p>
+        <br>
         <div id="a">
          <select id="aa">
              <option value="">PLEASE SELECT</option>
@@ -35,42 +67,48 @@
         </div>
     </div>
     <br>
+    <br> 
+    <br>
     <br>
     <div id="box">
        <div id="firstbox">
-           <label id="five">FIRST NAME*</label>
+           <p id="five">FIRST NAME*</p>
+           <br>
         <div id="a">
             <input id="firstname" type="text" placeholder="" />
         </div>
        </div> 
        <div id="secoundbox">
-        <label id="five">SECOUND NAME*</label>
+        <p id="five">SECOUND NAME*</p>
+        <br>
      <div id="a">
          <input id="secoundname" type="text" placeholder="" />
      </div>
     </div> 
     </div>
+    <div id="box">
     <div id="t">
-           <label id="five">EMAIL ADDRESS*</label>
+           <p id="five">EMAIL ADDRESS*</p>
+           <br>
         <div id="a">
             <input id="email_address" type="email" name="email" autocomplete="email"  value="" title="Email" class="input-text" data-mage-init='{"mage/trim-input":{}}' data-validate="{required:true, 'validate-email':true}">
         </div>
        </div>
-     <br>
-     <br>
-     <div id="t1">
-        <label id="five">PHONE NUMBER*</label>
-         <div id="t ">
+     <div id="t">
+        <p id="five">PHONE NUMBER*</p>
+        <br>
+         <div id="t2">
             <input id="number" type="number" placeholder="" /> 
          </div>
      </div> 
-     <br>
+    </div>
      <p id="five">SECURITY</p> 
      <hr>
      <br>
      <div id="box">
         <div id="t">
-            <label id="five">CREATE PASSWORD *</label>
+            <p id="five">CREATE PASSWORD *</p>
+            <br>
          <div id="a">
             <input type="password" name="password" id="password"
             title="Password"
@@ -80,24 +118,34 @@
             data-validate="{required:true, 'validate-customer-password':true}"
             autocomplete="off">
          </div> 
+         <div id="no">
+          <p>Password Strength:NO Password</p>
+          <br>
+          <br>
+     
+         </div>
         </div> 
         <div id="t">
-         <label id="five">CONFIRM PASSWORD*</label>
+         <p id="five">CONFIRM PASSWORD*</p>
+         <br>
       <div id="a">
         <input type="password" name="password_confirmation" title="Confirm&#x20;Password" id="passwordconfirmation" class="input-text" data-validate="{required:true, equalTo:'#password'}" autocomplete="off">
       </div>
      </div> 
      </div>
-         <p>Password Strength:NO Password</p>
-       
-     <br>
+     
     
-     <div id="t2">
+     <div id="t3">
          <input type="checkbox" />
          <label id="five">SIGN UP TO NEWSLETTER</label>
+         <br>
+         <br>
      </div>
+     <br>
+     <br>
    <br>
-   <P>* Required Fields</P>
+   <P class="color">* Required Fields</P>
+   <br>
    <br>
    <div id="t2">
     <button id="aaa" onclick="">CREATE AN ACCOUNT</button>

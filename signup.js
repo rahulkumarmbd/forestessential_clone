@@ -1,4 +1,4 @@
-document.querySelector("form").addEventListener("click", signUp);
+document.querySelector("button").addEventListener("click", signUp);
  var userArr= JSON.parse(localStorage.getItem("userData")) || []
 
 function signUp() {
