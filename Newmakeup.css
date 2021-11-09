@@ -1,0 +1,231 @@
+.makeupt {
+  color: #ffffff;
+  padding: 15px 0px;
+  font-size: 48px;
+  letter-spacing: 1.4px;
+  font-family: "Calluna";
+  font-size: 48px !important;
+  letter-spacing: 2.4px !important;
+  line-height: 56px !important;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 0px #333;
+  margin: 0 auto !important;
+  color: #fff;
+  align-self: center;
+  padding: 0;
+  top: 42%;
+  text-align: center;
+}
+
+.outer {
+  background-image: url("https://images.forestessentialsindia.com/pub/media/makeup/Makeup_collection_category_desktop.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 1240 px;
+  height: 10%;
+}
+
+.title {
+  text-align: center;
+}
+
+.outer {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.limit {
+  padding-left: 50px;
+  padding-top: 10px;
+  letter-spacing: 2.5px;
+  font-family: "calibre";
+  font-size: 11px;
+  line-height: 1;
+  color: #000000;
+  display: flex;
+}
+.lipserum {
+  height: 500px;
+  display: flex;
+}
+.box {
+  height: 500px;
+  width: 25%;
+}
+.box1 {
+  width: 50%;
+  height: 500px;
+}
+#class {
+  height: 600px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.tint {
+  padding: 15px 0px;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  font-family: "calibre";
+  color: #000000;
+  margin-left: 20px;
+}
+.serum {
+  padding-left: 15px;
+  color: #333333;
+  font-family: "Calluna";
+  font-size: 36px;
+  margin: 0px 0px 40px;
+}
+.dot1 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(224, 60, 73);
+  margin-left: 20px;
+}
+.dot2 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(133, 11, 3);
+  margin-left: 10px;
+}
+.dot3 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(72, 20, 3);
+  margin-left: 10px;
+}
+.dot4 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(252, 233, 166);
+  margin-left: 10px;
+}
+.dot5 {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(71, 26, 64);
+  margin-left: 10px;
+}
+#greaterthensign {
+  font-size: 21px;
+  vertical-align: top;
+  margin: 0px 5px;
+  margin-top: -4px;
+}
+.kajal1 {
+  height: 500px;
+  width: 25%;
+}
+.kajal2 {
+  width: 25%;
+  height: 250px;
+}
+.kajal {
+  padding-left: 15px;
+  color: #333333;
+  font-family: "Calluna";
+  font-size: 36px;
+  margin: 0px 0px 40px;
+}
+#boxkajal {
+  width: 100%;
+  height: 500px;
+}
+.introducemakeup {
+  display: flex;
+
+  width: 1232px;
+  height: 336px;
+  left: 1px;
+  top: 0px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.youtubemake {
+  width: 50%;
+  height: 336px;
+  padding-right: 20px;
+}
+#disc {
+  padding-left: 20px;
+  padding-top: 20px;
+  letter-spacing: 2.5px;
+  font-family: "calibre";
+  font-size: 11px;
+  line-height: 1;
+  color: #000000;
+}
+h3:after {
+  content: " \005F";
+  margin-left: 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+}
+#tubemake {
+  padding-left: 15px;
+  color: #333333;
+  font-family: "Calluna";
+  font-size: 36px;
+  margin: 0px 0px 40px;
+  letter-spacing: 1.8px;
+  line-height: 48px;
+}
+#para {
+  padding-left: 20px;
+  letter-spacing: 1.4px;
+  font-family: "calibre";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  display: flex;
+}
+.youpara {
+  letter-spacing: 1.4px;
+  font-family: "calibre";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.tintclass {
+  height: 90px;
+  width: 100%;
+
+  background-color: rgb(251, 249, 249);
+}
+.mainlips {
+  height: 159px;
+  width: 100%;
+
+  background-color: rgb(251, 249, 249);
+}
+.noor {
+  height: 90px;
+  width: 90%;
+
+  background-color: rgb(251, 249, 249);
+}
+.lastvideo {
+  margin-left: 20px;
+  border: 1px solid red;
+
+  /* width: 90%;
+    height: 336px; */
+  width: 50%;
+  height: 336px;
+  padding-right: 20px;
+}
