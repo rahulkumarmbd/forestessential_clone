@@ -1,14 +1,12 @@
 /* header CSS */
-body {
+body{
+  max-width: 1400px;
   width: 100%;
   margin: 0px;
   padding: 0px;
-  margin: auto;
 }
-
 header {
-  width: 100%;
-  margin: auto;
+  margin: 0px;
   padding: 0px;
   font-size: 12px;
   letter-spacing: 2.8px;
@@ -980,7 +978,6 @@ a {
   background-color: white;
   display: block;
 }
-
 @media screen and (max-width: 1200px) {
   .slideshow-container {
     display: none;
@@ -1084,7 +1081,6 @@ a {
   margin: 2px;
   margin-top: 5px;
 }
-
 @media screen and (max-width: 1200px) {
   .products-items-main {
     grid-template-columns: repeat(2, 49%);
@@ -1190,7 +1186,6 @@ a {
 #slider-products:hover .slider-box-next-btn {
   opacity: 1;
 }
-
 @media screen and (max-width: 1200px) {
   .slider-box {
     grid-template-columns: auto auto;
@@ -1214,6 +1209,7 @@ a {
     margin-top: 70px;
   }
 }
+
 /* CSS FOR APPOINTMENT LAYOUT */
 .appointmentDiv {
   background-color: #fbf9f9;
@@ -1311,6 +1307,7 @@ a {
   padding: 0px 50px;
 }
 .slide-info {
+  width: 25%;
   background: rgba(251, 249, 249, 0.8);
   display: flex;
   justify-content: center;
@@ -1407,7 +1404,6 @@ a {
     font-size: 24px;
   }
 }
-
 /* CSS FOR AYURVEDA-LAYOUT */
 
 .ayurvedaDiv {
@@ -1477,7 +1473,6 @@ a {
     line-height: 26px;
   }
 }
-
 /* This is the CSS for footer */
 .footer-wrap p {
   font-size: 11px;
