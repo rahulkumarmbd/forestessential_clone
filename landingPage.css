@@ -1192,26 +1192,43 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
+  #slide-box3 {
+    display: none;
+  }
+  #slide-box4 {
+    display: none;
+  }
   .slider-box {
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
   }
-  .slider-box-prev-btn,
   .slider-box-next-btn {
-    margin-top: 180px;
+    margin-top: -100px;
   }
 }
 @media screen and (max-width: 600px) {
-  .slider-box {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, auto);
+  #slide-box2 {
+    display: none;
   }
-  .slider-box-prev-btn,
-  .slider-box-next-btn {
+  #slide-box3 {
+    display: none;
+  }
+  #slide-box4 {
     display: none;
   }
   #slider-products {
-    margin-top: 70px;
+    margin-top: 90px;
+  }
+  .slider-box {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-box-next-btn {
+    margin-top: -100px;
   }
 }
 /* CSS FOR APPOINTMENT LAYOUT */
