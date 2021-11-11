@@ -38,6 +38,19 @@
         width: 100%;
         margin: 0px;
         padding: 0px;
+        max-width: 1400px;
+        margin: auto;
+      }
+      .calluna {
+        font-size: 36px;
+        letter-spacing: 1.4px;
+        font-family: "Calluna";
+      }
+      .calibre {
+        letter-spacing: 1.8px;
+        font-family: "calibre";
+        font-size: 12px;
+        line-height: 1;
       }
       .makeupt {
         color: #ffffff;
@@ -71,9 +84,8 @@
       }
       .outer {
         background-image: url("https://images.forestessentialsindia.com/pub/media/makeup/Makeup_collection_category_desktop.jpg");
-        background-size: contain;
+        background-size: 100%;
         background-repeat: no-repeat;
-        width: 100%;
         height: 386px;
         display: flex;
         align-items: center;
@@ -95,6 +107,9 @@
         grid-gap: 1.5%;
         padding: 0px 2%;
       }
+      .lipserumain div {
+        border: 1px solid red;
+      }
       .it3 {
         display: flex;
         flex-direction: column;
@@ -110,8 +125,134 @@
         min-width: 100%;
         height: 100%;
       }
-      .it3-img-div > img{
+      .it3-img-div > img {
         width: 100%;
+      }
+      .serum {
+        padding-top: 50px;
+        padding-left: 100px;
+        color: #333333;
+        font-family: "Calluna";
+        font-size: 36px;
+        margin: 0px 0px 40px;
+      }
+      .dot1 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(224, 60, 73);
+        margin-left: 20px;
+      }
+
+      .dot2 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(133, 11, 3);
+        margin-left: 10px;
+      }
+
+      .dot3 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(72, 20, 3);
+        margin-left: 10px;
+      }
+
+      .dot4 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(252, 233, 166);
+        margin-left: 10px;
+      }
+
+      .dot5 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(71, 26, 64);
+        margin-left: 10px;
+      }
+      .mainlips {
+        padding-top: 20px;
+      }
+      .price {
+        margin: 0px;
+        font-size: 11px;
+        letter-spacing: 1.4px;
+        font-family: "calibre";
+        color: #000000;
+        margin-left: 20px;
+        margin-top: 75px;
+      }
+      .liptint-div > p {
+        margin: 0px;
+        font-size: 11px;
+        letter-spacing: 1.4px;
+        font-family: "calibre";
+        color: #000000;
+        margin-left: 20px;
+      }
+      /* .lipserumain div {
+            border: 1px solid black;
+        } */
+      .shortdiv {
+        width: 5%;
+        border: 1px #000000;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .roshan {
+        grid-template-columns: 23% 22.5% 50.5%;
+      }
+      /* CSS for Youtube layout */
+      .Youtube-layout {
+        width: 92%;
+        margin: 50px auto;
+        padding: 40px 2%;
+        background-color: #fbf9f9;
+        display: grid;
+        grid-template-columns: 48% 46%;
+        grid-template-rows: auto;
+        grid-gap: 4%;
+      }
+      .youtube-click-here {
+        display: flex;
+      }
+      .youtube-click-here p{
+        margin: 0px;
+      }
+      .youtube-click-here a{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+      }
+      .info-youtube-layout {
+        letter-spacing: 1.4px;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .Youtube-layout-bar>div{
+        height: 1px;
+        border-bottom: 1.4px solid black;
+        width: 20px;
+      }
+      @media screen and (max-width:986px) {
+        .Youtube-layout {
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        margin: auto;
+      }
+
       }
     </style>
   </head>
@@ -132,6 +273,7 @@
       <div>MAKEUP</div>
     </div>
     <!-- Lip Serums -->
+    <h2 class="serum">Lip Serums</h2>
     <div class="lipserumain">
       <div class="it1">
         <video class="makeup-video" muted autoplay loop>
@@ -157,7 +299,105 @@
           <p>RASA GULAAB JAL</p>
           <p>2.2 gms</p>
         </div>
-        <div></div>
+        <div class="mainlips">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+          <div class="dot3"></div>
+          <div class="dot4"></div>
+          <div class="dot5"></div>
+        </div>
+        <div>
+          <div class="shortdiv"></div>
+        </div>
+        <div class="price">₹1,295.00</div>
+      </div>
+    </div>
+    <div class="lipserumain roshan">
+      <div class="it3">
+        <div class="it3-img-div">
+          <img
+            src="https://images.forestessentialsindia.com/pub/media/makeup/1087_Tinted_Lip_Serum_Gulaab_Jal.png"
+            alt="Lipstick Shade"
+          />
+        </div>
+        <div class="liptint-div">
+          <p>TINTED LIP SERUM MADHU</p>
+          <p>RASA GULAAB JAL</p>
+          <p>2.2 gms</p>
+        </div>
+        <div class="mainlips">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+          <div class="dot3"></div>
+          <div class="dot4"></div>
+          <div class="dot5"></div>
+        </div>
+        <div>
+          <div class="shortdiv"></div>
+        </div>
+        <div class="price">₹1,295.00</div>
+      </div>
+      <div class="it2">
+        <img
+          src="https://images.forestessentialsindia.com/pub/media/makeup/Gulaab-Jal-category-texture-main.jpg"
+          alt="Lipstick Shade"
+        />
+      </div>
+      <div class="it1">
+        <video class="makeup-video" muted autoplay loop>
+          <source src="Lip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class="Youtube-layout">
+      <div>
+        <div>
+          <iframe
+            width="100%"
+            height="336px"
+            src="https://www.youtube.com/embed/u3s-e9aKcog"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <p class="calibre info-youtube-layout">
+            This collection is natural, cruelty free and, crafted from fresh and
+            seasonal ingredients.
+          </p>
+        </div>
+        <div class="youtube-click-here">
+          <p class="calibre info-youtube-layout">For more information on our makeup collection,</p>
+          <a href="#" class="calibre">Click Here</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <p class="calibre">DISCOVER MORE</p>
+        </div>
+        <div class="Youtube-layout-bar">
+          <div></div>
+        </div>
+        <div>
+          <p class="calluna">
+            Natural Makeup Infused with Precious Skincare Botanicals
+          </p>
+        </div>
+        <div>
+          <p class="calibre info-youtube-layout">
+            In ancient times, women used soot from earthen Diyas to enhance
+            their eyes and fresh extracts from natural, freshly cut Beetroot, to
+            tint their lips and cheeks. Our new Natural Makeup Collection is
+            inspired from re-introducing these age-old rituals to our discerning
+            customers with diverse complexions, features and skin types. It is
+            deeply enriched with natural ingredients and a miraculous serum
+            formula that enhances the lips and eyes, whilst restoring their
+            natural beauty.
+          </p>
+        </div>
       </div>
     </div>
   </body>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-width: 768px)"
+      href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="print"
+      href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/print.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="https://cdn.forestessentialsindia.com/pub/static/_cache/merged/0f636fc2f9453eb227a19f25bc98a1ea.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-width: 768px)"
+      href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/styles-l.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="print"
+      href="https://cdn.forestessentialsindia.com/pub/static/frontend/Forest/Theme/en_US/css/print.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details Page</title>
+    <style>
+      .calluna {
+        font-size: 36px;
+        letter-spacing: 1.4px;
+        font-family: "Calluna";
+      }
+      .calibre {
+        letter-spacing: 1.8px;
+        font-family: "calibre";
+        font-size: 12px;
+        line-height: 1;
+      }
+      #product-details-prod {
+        width: 83%;
+        margin: auto;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 45% 47%;
+        grid-template-rows: auto;
+        grid-gap: 3%;
+        background-color: #fbf9f9;
+        padding: 50px 100px;
+        margin-bottom: 400px;
+      }
+      #product-details-prod p {
+        color: #333333;
+      }
+      .product-details-img-slider {
+        margin: auto;
+        display: flex;
+        width: 80%;
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+      }
+      .product-details-img-div {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        transition: 0.7s;
+      }
+      img {
+        width: 100%;
+        margin: auto;
+      }
+      .product-details-indicators {
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        transform: translateX(-53%);
+      }
+      .product-details-indicators span {
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      .product-details-indicators span:hover {
+        background-color: black;
+        transition: background-color 1s;
+      }
+      .product-details-prev-btn {
+        font-size: 60px;
+        position: absolute;
+        top: 40%;
+        left: -40px;
+        width: auto;
+        cursor: pointer;
+      }
+      .product-details-next-btn {
+        font-size: 60px;
+        position: absolute;
+        top: 40%;
+        right: -40px;
+        width: auto;
+        cursor: pointer;
+      }
+      .product-details-img-slider:hover .product-details-extra2,
+      .product-details-img-slider:hover .product-details-extra1 {
+        background-color: white;
+        width: 18%;
+        transition: width 0.2s;
+      }
+      .product-details-img-slider:hover .product-details-prev-btn {
+        left: 4%;
+        transition: left 0.2s;
+      }
+      .product-details-img-slider:hover .product-details-next-btn {
+        right: 4%;
+        transition: right 0.2s;
+      }
+      .product-details-extra1 {
+        position: absolute;
+        justify-content: space-between;
+        height: 100%;
+        left: 0%;
+        width: 0%;
+      }
+      .product-details-extra2 {
+        position: absolute;
+        justify-content: space-between;
+        height: 100%;
+        width: 0%;
+        right: 0%;
+      }
+      .active {
+        background-color: black;
+      }
+      .product-details-sticky-div {
+        position: sticky;
+        top: 50px;
+      }
+      .align-flex-row {
+        display: flex;
+      }
+      .align-flex-row p {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: calibre;
+      }
+      .align-flex-row + div > p {
+        line-height: 48px;
+        letter-spacing: 1.8px;
+        margin: 0px;
+      }
+      .product-details-size > p {
+        font-size: 11px;
+        letter-spacing: 2.8px;
+        padding-bottom: 30px;
+        margin-top: 10px;
+      }
+      .product-details-prize-div > p {
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 48px;
+        margin: 0px;
+      }
+      .num-of-items-div {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: auto;
+        grid-gap: 0%;
+      }
+      .num-of-items > button {
+        height: 45px !important;
+        width: 40px !important;
+        transition: none !important;
+        border: 1px solid #bfbfbf;
+        background-color: #fbf9f9;
+      }
+      .num-of-items > input {
+        height: 41px !important;
+        width: 60px !important;
+        text-align: center;
+      }
+      .add-to-bag-btn-div > button {
+        border: 1px solid #bfbfbf;
+        width: 70% !important;
+        height: 45px !important;
+        text-align: center;
+        background-color: #fbf9f9;
+      }
+      .print-text {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+        display: block;
+        margin-top: 20px;
+        font-family: calibre;
+      }
+      .delivery-div {
+        display: grid;
+        grid-template-columns: 7% auto;
+        grid-template-rows: auto;
+        align-items: center;
+      }
+      .product-details-info {
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        line-height: 24px;
+        margin: 0 0 10px;
+      }
+      #product-details-prod ul {
+        margin: 0px;
+        padding-left: 3%;
+      }
+      .disclaimer {
+        margin-top: 20px;
+        font-size: 11px;
+        font-family: calibre;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="product-details-prod">
+      <div>
+        <div class="product-details-sticky-div">
+          <div class="product-details-img-slider">
+            <div class="product-details-extra1"></div>
+            <div class="product-details-img-div">
+              <img
+                src="https://images.forestessentialsindia.com/pub/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/8/8/8878_delicate_facial_cleanser_kashmiri_saffron_neem_200ml_fornt1.png"
+                alt=""
+              />
+              <img
+                src="https://images.forestessentialsindia.com/pub/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/8/8/8878_delicate_facial_cleanser_kashmiri_saffron_neem_200ml_side1.png"
+                alt=""
+              />
+              <img
+                src="https://images.forestessentialsindia.com/pub/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/8/8/8878_delicate_facial_cleanser_kashmiri_saffron_neem_200ml_back1.png"
+                alt=""
+              />
+            </div>
+            <div class="product-details-indicators">
+              <span class="indicator1 active"></span>
+              <span class="indicator2"></span>
+              <span class="indicator3"></span>
+            </div>
+            <div class="product-details-extra2"></div>
+            <a class="product-details-prev-btn">&#10094;</a>
+            <a class="product-details-next-btn">&#10095;</a>
+          </div>
+          <div>
+            <p class="disclaimer">
+              Disclaimer: The image is for representation purposes only. The
+              packaging you receive might vary.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="align-flex-row">
+          <p class="print-text">Home</p>
+          <p
+            class="print-text"
+            style="font-size: 20px; margin-top: 16px; padding: 0px 3px"
+          >
+            >
+          </p>
+          <p class="print-text">
+            DELICATE FACIAL CLEANSER KASHMIRI SAFFRON & NEEM
+          </p>
+        </div>
+        <div>
+          <p class="calluna">
+            Delicate Facial Cleanser Kashmiri Saffron & Neem
+          </p>
+        </div>
+        <div class="product-details-size">
+          <p class="calibre">SIZE : 200 ml</p>
+        </div>
+        <div class="product-details-prize-div">
+          <p class="calibre">₹1,395.00</p>
+        </div>
+        <div class="num-of-items-div">
+          <div class="num-of-items">
+            <button>-</button>
+            <input type="text" value="1" />
+            <button>+</button>
+          </div>
+          <div class="add-to-bag-btn-div">
+            <button>ADD TO BAG</button>
+          </div>
+        </div>
+        <div><p class="print-text">PRODUCT PRICE IS INCL. OF ALL TAXES</p></div>
+        <div class="delivery-div">
+          <i class="fa fa-truck" style="font-size: 24px"></i>
+          <p class="print-text">CHECK DELIVERY</p>
+        </div>
+        <div>
+          <p class="print-text">DESCRIPTION</p>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <p class="product-details-info">
+            The secret to proper cleansing is to remove dead cells, toxins and
+            make up, and clear clogged pores, without stripping the skin’s
+            natural oil and moisture content. Following this philosophy, the
+            Forest Essentials Delicate Facial Cleanser Kashmiri Saffron & Neem
+            is an ideal gentle and natural alternative to harsh sulphate infused
+            cleansers, and is especially designed to treat sensitive, acne prone
+            and oily skin. This Ayurvedic facial cleanser is infused with
+            purifying herbs including Neem and Kewda to deeply cleanse the skin,
+            while leaving it glowing and balanced after each use.
+          </p>
+        </div>
+        <div>
+          <p class="print-text">BENEFITS</p>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <ul>
+          <li class="product-details-info">
+            This Ayurvedic facial cleanser clears clogged pores, while
+            replenishing the skin's natural moisture.
+          </li>
+          <li class="product-details-info">
+            It purifies and adds natural glow to the complexion.
+          </li>
+          <li class="product-details-info">
+            It leaves the skin clear, soft and supple.
+          </li>
+          <li class="product-details-info">Eco-friendly packaging.</li>
+          <li class="product-details-info">
+            Free from chemicals and parabens.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>rahul</div>
+  </body>
+</html>
+<script>
+  var indicator1 = document.querySelector(".indicator1");
+  var indicator2 = document.querySelector(".indicator2");
+  var indicator3 = document.querySelector(".indicator3");
+  var indicators = document.querySelectorAll(
+    ".product-details-indicators > span"
+  );
+  var productDetailsSlider = document.querySelector(".product-details-img-div");
+  indicator1.addEventListener("click", function () {
+    productDetailsSlider.style.transform = "translateX(-0px)";
+    indicators.forEach((dot) => {
+      dot.classList.remove("active");
+    });
+    indicator1.classList.add("active");
+  });
+  indicator2.addEventListener("click", function () {
+    productDetailsSlider.style.transform = "translateX(-100%)";
+    indicators.forEach((dot) => {
+      dot.classList.remove("active");
+    });
+    indicator2.classList.add("active");
+  });
+  indicator3.addEventListener("click", function () {
+    productDetailsSlider.style.transform = "translateX(-200%)";
+    indicators.forEach((dot) => {
+      dot.classList.remove("active");
+    });
+    indicator3.classList.add("active");
+  });
+
+  var productDetailsPrevBtn = document.querySelector(
+    ".product-details-prev-btn"
+  );
+  var productDetailsNextBtn = document.querySelector(
+    ".product-details-next-btn"
+  );
+  var productDetailsSlidingCount = 0;
+  localStorage.setItem(
+    "productDetailsSlidingCount",
+    productDetailsSlidingCount
+  );
+  productDetailsPrevBtn.addEventListener("click", function () {
+    productDetailsSlidingCount = localStorage.getItem(
+      "productDetailsSlidingCount"
+    );
+    productDetailsSlidingCount--;
+    translationOfSlides(productDetailsSlidingCount);
+  });
+
+  productDetailsNextBtn.addEventListener("click", function () {
+    productDetailsSlidingCount = localStorage.getItem(
+      "productDetailsSlidingCount"
+    );
+    productDetailsSlidingCount++;
+    translationOfSlides(productDetailsSlidingCount);
+  });
+  function translationOfSlides(productDetailsSlidingCount) {
+    if (productDetailsSlidingCount > 2) {
+      productDetailsSlidingCount = 0;
+      productDetailsSlidingCount2 = 0;
+    }
+    console.log(productDetailsSlidingCount);
+    if (productDetailsSlidingCount < 0) {
+      productDetailsSlidingCount = 2;
+    }
+
+    if (productDetailsSlidingCount == 0) {
+      productDetailsSlider.style.transform = "translateX(-0px)";
+      indicators.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+      indicator1.classList.add("active");
+    }
+
+    if (productDetailsSlidingCount == 1) {
+      productDetailsSlider.style.transform = "translateX(-100%)";
+      indicators.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+      indicator2.classList.add("active");
+    }
+
+    if (productDetailsSlidingCount == 2) {
+      productDetailsSlider.style.transform = "translateX(-200%)";
+      indicators.forEach((dot) => {
+        dot.classList.remove("active");
+      });
+      indicator3.classList.add("active");
+    }
+
+    localStorage.setItem(
+      "productDetailsSlidingCount",
+      productDetailsSlidingCount
+    );
+  }
+</script>
