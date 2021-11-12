@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   max-width: 1400px;
+  margin: auto;
 }
 .calluna {
   font-size: 36px;
@@ -239,7 +240,7 @@ img {
   grid-gap: 1%;
 }
 #product-reviews-layout-2 {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 24.25%);
@@ -418,7 +419,7 @@ img {
     grid-template-rows: 150px;
   }
   .product-reviews-layout-2 {
-    overflow: scroll;
+    overflow-x: scroll;
   }
   .review-btns {
     justify-content: center;
