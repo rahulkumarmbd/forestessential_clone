@@ -106,10 +106,11 @@
         grid-template-rows: 533px;
         grid-gap: 1.5%;
         padding: 0px 2%;
+        grid-template-areas: "it1 it2 it3";
       }
-      .lipserumain div {
+      /* .lipserumain div {
         border: 1px solid red;
-      }
+      } */
       .it3 {
         display: flex;
         flex-direction: column;
@@ -140,49 +141,61 @@
         height: 23px;
         width: 23px;
         border-radius: 50%;
-        display: inline-block;
-        background-color: rgb(224, 60, 73);
-        margin-left: 20px;
+       background-color: rgb(224, 60, 73);
+       
       }
 
       .dot2 {
         height: 23px;
         width: 23px;
         border-radius: 50%;
-        display: inline-block;
+        
         background-color: rgb(133, 11, 3);
-        margin-left: 10px;
+       
       }
 
       .dot3 {
         height: 23px;
         width: 23px;
         border-radius: 50%;
-        display: inline-block;
+        
         background-color: rgb(72, 20, 3);
-        margin-left: 10px;
+        
       }
 
       .dot4 {
         height: 23px;
         width: 23px;
         border-radius: 50%;
-        display: inline-block;
+       
         background-color: rgb(252, 233, 166);
-        margin-left: 10px;
+     
       }
 
       .dot5 {
         height: 23px;
         width: 23px;
         border-radius: 50%;
-        display: inline-block;
         background-color: rgb(71, 26, 64);
-        margin-left: 10px;
       }
+        
       .mainlips {
         padding-top: 20px;
+        display: flex;
+
       }
+      .mainlips div{
+        padding: 5px;
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        margin: 0px 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      
       .price {
         margin: 0px;
         font-size: 11px;
@@ -246,6 +259,114 @@
         border-bottom: 1.4px solid black;
         width: 20px;
       }
+      .it3{
+        background-color: rgb(251, 249, 249);
+      }
+      #you-bar{
+          margin-left: 20px;
+          margin-top: 100px;
+      }
+      #you{
+        margin-left: 20px;
+        margin-top: 40px;
+      }
+      .dot6 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(86, 86, 85);
+        margin-left: 20px;
+      }
+
+      .dot7 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        margin-left: 10px;
+      }
+
+      .dot8 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(60, 37, 18);
+        margin-left: 10px;
+      }
+
+      .dot9 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(11, 29, 86);
+        margin-left: 10px;
+      }
+      #Noor{
+          margin-top: 100px;
+      }
+      .dot10 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(189, 101, 100);
+        margin-left: 10px;
+      }
+      .dot11 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(160, 64, 42);
+        margin-left: 10px;
+      }
+      .dot12 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(204, 154, 109);
+        margin-left: 10px;
+      }
+      .dot13 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(198, 137, 108);
+        margin-left: 10px;
+      }
+      .dot14 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(182, 120, 69);
+        margin-left: 10px;
+      }
+      .dot15 {
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: rgb(148, 92, 57);
+        margin-left: 10px;
+      }
+      .youtube{
+           margin-top: 40px;
+      }
+      .som{
+          margin-top: 50px;
+      }
+      img{
+          width: 100%;
+      }
+
+      /* Media queries */
       @media screen and (max-width:986px) {
         .Youtube-layout {
         grid-template-columns: 90%;
@@ -254,6 +375,16 @@
       }
 
       }
+      /* @media screen and (max-width:400px) {
+        .lipserumain {
+        
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        margin: auto;
+        grid-template-areas: "it1" "it2" "it3";
+      }
+        
+      } */
     </style>
   </head>
 
@@ -281,7 +412,7 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="it2">
+      <div class="it2" id="lipessential">
         <img
           src="https://images.forestessentialsindia.com/pub/media/makeup/Gulaab-Jal-category-texture-main.jpg"
           alt="Lipstick Shade"
@@ -289,7 +420,7 @@
       </div>
       <div class="it3">
         <div class="it3-img-div">
-          <img
+          <img 
             src="https://images.forestessentialsindia.com/pub/media/makeup/1087_Tinted_Lip_Serum_Gulaab_Jal.png"
             alt="Lipstick Shade"
           />
@@ -299,42 +430,48 @@
           <p>RASA GULAAB JAL</p>
           <p>2.2 gms</p>
         </div>
+
         <div class="mainlips">
-          <div class="dot1"></div>
-          <div class="dot2"></div>
-          <div class="dot3"></div>
-          <div class="dot4"></div>
-          <div class="dot5"></div>
-        </div>
-        <div>
-          <div class="shortdiv"></div>
-        </div>
+        <div><span class="dot1" ></span></div>
+        <div><span class="dot2" ></span></div>
+        <div><span class="dot3" ></span></div>
+        <div><span class="dot4" ></span></div>
+        <div><span class="dot5" ></span></div>
+        </div> 
+
+        <div id="you"  class="Youtube-layout-bar">
+            <div></div>
+          </div>
         <div class="price">₹1,295.00</div>
       </div>
     </div>
+    <!-- Kajals -->
+    <div>
+        
+        <h2 class="serum">Kajals</h2>
     <div class="lipserumain roshan">
       <div class="it3">
         <div class="it3-img-div">
           <img
-            src="https://images.forestessentialsindia.com/pub/media/makeup/1087_Tinted_Lip_Serum_Gulaab_Jal.png"
+            src="https://images.forestessentialsindia.com/pub/media/makeup/9571_Ash_Gray_Kajal_With_Stroke.png"
             alt="Lipstick Shade"
           />
         </div>
         <div class="liptint-div">
-          <p>TINTED LIP SERUM MADHU</p>
-          <p>RASA GULAAB JAL</p>
-          <p>2.2 gms</p>
+          <p>ASH GRAY GULAAB KHAAS KAJAL</p>
+          <p>0.30 gms</p>
+          
         </div>
         <div class="mainlips">
-          <div class="dot1"></div>
-          <div class="dot2"></div>
-          <div class="dot3"></div>
-          <div class="dot4"></div>
-          <div class="dot5"></div>
+          <div class="dot6"></div>
+          <div class="dot7"></div>
+          <div class="dot8"></div>
+          <div class="dot9"></div>
+          
         </div>
-        <div>
-          <div class="shortdiv"></div>
-        </div>
+        <div id="you"  class="Youtube-layout-bar">
+            <div></div>
+          </div>
         <div class="price">₹1,295.00</div>
       </div>
       <div class="it2">
@@ -350,6 +487,10 @@
         </video>
       </div>
     </div>
+</div>
+    <!-- Youtube video -->
+   <div class="youtube">
+
     <div class="Youtube-layout">
       <div>
         <div>
@@ -400,5 +541,170 @@
         </div>
       </div>
     </div>
+</div>
+   <!-- Nayantara Lash & Brow Serum -->
+   <div>
+    <h2 class="serum">Nayantara Lash & Brow Serum</h2>
+    <div class="lipserumain">
+      <div class="it1">
+        <video class="makeup-video" muted autoplay loop>
+          <source src="Lip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="it2">
+        <img
+          src="https://images.forestessentialsindia.com/pub/media/makeup/9500_Lash_serum.jpg"
+          alt="Lipstick Shade"
+        />
+      </div>
+      <div class="it3">
+        <div class="it3-img-div">
+          <img
+            src="https://images.forestessentialsindia.com/pub/media/makeup/9500_Nayantara_Clear_Lash_Brow_Serum_Category.png"
+            alt="Lipstick Shade"
+          />
+        </div>
+        <div class="liptint-div">
+          <p>NAYANTARA CLEAR LASH & BROW SERUM</p>
+          <p>8.5 ml</p>
+          
+        </div>
+        <div>
+            <div id="you-bar"  class="Youtube-layout-bar">
+                <div></div>
+              </div>
+        <div class="price">₹1,225.00</div>
+      </div>
+    </div>
+   </div>
+   <!-- Noor Nikhaar Cheek Tint -->
+   
+   <div id="Noor">
+    <h2 class="serum">Noor Nikhaar Cheek Tint</h2>
+   <div class="lipserumain roshan">
+    <div class="it3">
+      <div class="it3-img-div">
+        <img
+          src="https://images.forestessentialsindia.com/pub/media/makeup/1059_Cheek_Tint_Gulaabi_category.png"
+          alt="Lipstick Shade"
+        />
+      </div>
+      <div class="liptint-div">
+        
+        <p>GULAABI NOOR NIKHAAR CHEEK TINT</p>
+        <p>10 ml</p>
+        
+      </div>
+      <div class="mainlips">
+        <div class="dot10"></div>
+        <div class="dot11"></div>
+        
+        
+      </div>
+      <div id="you"  class="Youtube-layout-bar">
+          <div></div>
+        </div>
+      <div class="price">₹1350.00</div>
+    </div>
+    <div class="it2">
+      <img
+        src="https://images.forestessentialsindia.com/pub/media/makeup/Gulaab-Jal-category-texture-main.jpg"
+        alt="Lipstick Shade"
+      />
+    </div>
+    <div class="it1">
+      <video class="makeup-video" muted autoplay loop>
+        <source src="Lip.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+<!-- Som Rasa Silk Skin Tint -->
+<div class="som">
+    <h2 class="serum">Som Rasa Silk Skin Tint</h2>
+    <div>
+        
+        <div class="lipserumain">
+          <div class="it1">
+            <video class="makeup-video" muted autoplay loop>
+              <source src="Lip.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="it2">
+            <img
+              src="https://images.forestessentialsindia.com/pub/media/makeup/1055_Foundation_Gulab_Pankh.jpg"
+              alt="Lipstick Shade"
+            />
+          </div>
+          <div class="it3">
+            <div class="it3-img-div">
+              <img
+                src="https://images.forestessentialsindia.com/pub/media/makeup/1057_Foundation_Chandan_category_Front.png"
+                alt="Lipstick Shade"
+              />
+            </div>
+            <div class="liptint-div">
+                
+              <p>CHANDAN SOM RASA SILK SKIN TINT</p>
+              <p>40 ml</p>
+              
+            </div>
+            <div class="mainlips">
+              <div class="dot12"></div>
+              <div class="dot13"></div>
+              <div class="dot13"></div>
+              <div class="dot14"></div>
+              
+            </div>
+            <div id="you"  class="Youtube-layout-bar">
+                <div></div>
+              </div>
+            <div class="price">₹2,750.00</div>
+          </div>
+        </div>
+    </div>
+</div>
+<!-- youtube2 video -->
+<div>
+  <div class="youtube">
+      <div class="Youtube-layout">
+       <div>
+          <div>
+            <p class="calibre">SKINMALISM WITH FOREST ESSENTIALS</p>
+          </div>
+          <div class="Youtube-layout-bar">
+            <div></div>
+          </div>
+          <div>
+            <p class="calluna">
+              When Skincare Meets Makeup
+            </p>
+          </div>
+          <div>
+            <p class="calibre info-youtube-layout">
+              Discover the concept of skinmalism – when skincare meets minimalism to create a canvas that looks luminous and healthy – with new additions to the Natural Makeup Collection. Explore the Som Rasa Silk Skin Tint for a radiant touch, to be used as the first step of your makeup routine. Apply the mousse-like Noor Nikhaar Cheek Tint for a soft wash of colour. End your daily makeup ritual with the strengthening yet delicate care of the Nayantara Clear Lash & Brow Serum for voluminous lashes and denser brows.
+            </p>
+           
+          </div>
+        </div>
+        <div>
+          <div >
+            <iframe
+              style="width: 100%; height: 336px"
+              src="https://www.youtube.com/embed/L-YSkZjYQNM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+         </div>
+      </div>
+  </div>  
+</div>
   </body>
 </html>
+<script src="roshan.js"></script>
