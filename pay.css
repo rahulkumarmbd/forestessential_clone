@@ -1,0 +1,52 @@
+.paymentContainer {
+  display: grid;
+  width: 56%;
+  padding-top: 0px;
+  border: 1px solid black;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px;
+  grid-gap: 20px;
+  margin-left: 280px;
+  margin-right: 200px;
+}
+
+#paymentheader {
+  background-color: gray;
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+
+#paymentnumber {
+  height: 40px;
+}
+#payUser1 {
+  height: 40px;
+  width: 90%;
+}
+
+#payUser2 {
+  height: 40px;
+  width: 97%;
+}
+
+#paymentname {
+  height: 40px;
+  width: 98.2%;
+}
+
+#paybutton {
+  color: white;
+  font-size: 10px;
+  height: 50px;
+  background-color: blue;
+}
+
+#paydisplay {
+  display: flex;
+  width: 100%;
+}
+
+#paydisplay div {
+  width: 50%;
+}
