@@ -1,0 +1,396 @@
+/* body css */
+
+.makeupt {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Calluna";
+    font-size: 48px;
+    letter-spacing: 2.4px;
+    line-height: 56px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #333;
+}
+
+.limit {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-top: 10px;
+    letter-spacing: 2.5px;
+    font-family: "calibre";
+    font-size: 11px;
+    line-height: 1;
+    color: #000000;
+    display: flex;
+}
+
+.title {
+    text-align: center;
+}
+
+#greaterthensign {
+    font-size: 21px;
+    vertical-align: top;
+    margin: 0px 5px;
+    margin-top: -4px;
+}
+
+.outer {
+    background-image: url("https://images.forestessentialsindia.com/pub/media/makeup/Makeup_collection_category_desktop.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 386px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3:after {
+    content: " \005F";
+    margin-left: 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+}
+
+.lipserumain {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50.5% 22.5% 23%;
+    grid-template-rows: 533px;
+    grid-gap: 1.5%;
+    padding: 0px 2%;
+    grid-template-areas: "it1 it2 it3";
+}
+
+
+/* .lipserumain div {
+border: 1px solid red;
+} */
+
+.it3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.liptint-div>p {
+    margin: 0px;
+}
+
+.it2>img {
+    width: 100%;
+    height: 100%;
+}
+
+.makeup-video {
+    min-width: 100%;
+    height: 100%;
+}
+
+.it3-img-div>img {
+    width: 100%;
+}
+
+.serum {
+    padding-top: 50px;
+    padding-left: 100px;
+    color: #333333;
+    font-family: "Calluna";
+    font-size: 36px;
+    margin: 0px 0px 40px;
+}
+
+.dot1 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(224, 60, 73);
+}
+
+.dot2 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(133, 11, 3);
+}
+
+.dot3 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(72, 20, 3);
+}
+
+.dot4 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(252, 233, 166);
+}
+
+.dot5 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(71, 26, 64);
+}
+
+.mainlips {
+    padding-top: 20px;
+    display: flex;
+}
+
+.mainlips div {
+    padding: 5px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin: 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    margin: 0px;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    font-family: "calibre";
+    color: #000000;
+    margin-left: 20px;
+    margin-top: 75px;
+}
+
+.liptint-div>p {
+    margin: 0px;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    font-family: "calibre";
+    color: #000000;
+    margin-left: 20px;
+}
+
+
+/* .lipserumain div {
+    border: 1px solid black;
+} */
+
+.shortdiv {
+    width: 5%;
+    border: 1px #000000;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.roshan {
+    grid-template-columns: 23% 22.5% 50.5%;
+}
+
+
+/* CSS for Youtube layout */
+
+.Youtube-layout {
+    width: 92%;
+    margin: 50px auto;
+    padding: 40px 2%;
+    background-color: #fbf9f9;
+    display: grid;
+    grid-template-columns: 48% 46%;
+    grid-template-rows: auto;
+    grid-gap: 4%;
+}
+
+.youtube-click-here {
+    display: flex;
+}
+
+.youtube-click-here p {
+    margin: 0px;
+}
+
+.youtube-click-here a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.info-youtube-layout {
+    letter-spacing: 1.4px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.Youtube-layout-bar>div {
+    height: 1px;
+    border-bottom: 1.4px solid black;
+    width: 20px;
+}
+
+.it3 {
+    background-color: rgb(251, 249, 249);
+}
+
+#you-bar {
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+#you {
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.dot6 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(86, 86, 85);
+}
+
+.dot7 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.dot8 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(60, 37, 18);
+}
+
+.dot9 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(11, 29, 86);
+}
+
+#Noor {
+    margin-top: 100px;
+}
+
+.dot10 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(189, 101, 100);
+}
+
+.dot11 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(160, 64, 42);
+}
+
+.dot12 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(204, 154, 109);
+}
+
+.dot13 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(198, 137, 108);
+}
+
+.dot14 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(182, 120, 69);
+}
+
+.dot15 {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: rgb(148, 92, 57);
+}
+
+.youtube {
+    margin-top: 40px;
+}
+
+.som {
+    margin-top: 50px;
+}
+
+.mainkajal {
+    padding-top: 20px;
+    display: flex;
+}
+
+.mainkajal div {
+    padding: 5px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin: 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Noormain {
+    padding-top: 20px;
+    display: flex;
+}
+
+.Noormain div {
+    padding: 5px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin: 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.silkmain {
+    padding-top: 20px;
+    display: flex;
+}
+
+.silkmain div {
+    padding: 5px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin: 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width:986px) {
+    .Youtube-layout {
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        margin: auto;
+    }
+}
+
+
+/* @media screen and (max-width:400px) {
+.lipserumain {
+
+grid-template-columns: 100%;
+grid-template-rows: auto auto auto;
+margin: auto;
+grid-template-areas: "it1" "it2" "it3";
+}
+
+} */

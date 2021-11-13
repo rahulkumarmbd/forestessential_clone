@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif!important;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .mainscreen {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #DFDBE5;
+            color: black;
+        }
+        
+        .card {
+            width: 60rem;
+            margin: auto;
+            background: white;
+            position: center;
+            align-self: center;
+            top: 50rem;
+            border-radius: 1.5rem;
+            box-shadow: 4px 3px 20px #3535358c;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .leftside {
+            width: 25rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+        }
+        
+        .product {
+            object-fit: cover;
+            width: 20em;
+            height: 20em;
+            border-radius: 100%;
+        }
+        
+        .rightside {
+            background-color: #ffffff;
+            width: 35rem;
+            border-bottom-right-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            padding: 1rem 2rem 3rem 3rem;
+        }
+        
+        p {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin: .8rem 0;
+        }
+        
+        .inputbox {
+            color: #030303;
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 1.5px solid #ccc;
+            margin-bottom: 1rem;
+            border-radius: 0.3rem;
+            font-family: 'Roboto', sans-serif;
+            color: #615a5a;
+            font-size: 1.1rem;
+            font-weight: 500;
+            outline: none;
+        }
+        
+        .expcvv {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.6rem;
+        }
+        
+        .expcvv_text {
+            padding-right: 1rem;
+        }
+        
+        .expcvv_text2 {
+            padding: 0 1rem;
+        }
+        
+        .button {
+            background: black;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            width: 100%;
+            letter-spacing: .11rem;
+            outline: none;
+        }
+        
+        .button:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 3px 3px 6px #38373785;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .card {
+                flex-direction: column;
+                width: auto;
+            }
+            .leftside {
+                width: 100%;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0;
+                border-radius: 0;
+            }
+            .rightside {
+                width: auto;
+                border-bottom-left-radius: 1.5rem;
+                padding: 0.5rem 3rem 3rem 2rem;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mainscreen">
+        <div class="card">
+            <div class="leftside">
+                <img src="https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="product" alt="Shoes" />
+            </div>
+            <div class="rightside">
+                <form action="">
+                    <h1>CheckOut</h1>
+                    <h2>Payment Information</h2>
+                    <p>Cardholder Name</p>
+                    <input type="text" class="inputbox" name="name" id="name" required />
+                    <p id="alert-name"></p>
+                    <p>Card Number</p>
+                    <input type="number" class="inputbox" name="card_number" id="card_number" required />
+                    <p id="alert-card"></p>
+
+                    <p>Card Type</p>
+                    <select class="inputbox" name="card_type" id="card_type" required>
+                  <option value="">--Select a Card Type--</option>
+                  <option value="Visa">Visa</option>
+                  <option value="RuPay">RuPay</option>
+                  <option value="MasterCard">MasterCard</option>
+                </select>
+                    <div class="expcvv">
+
+                        <p class="expcvv_text">Expiry</p>
+                        <input type="text" class="inputbox" name="exp_date" id="exp_date" required />
+                        <p id="alert-expiry"></p>
+
+                        <p class="expcvv_text2">CVV</p>
+                        <input type="password" class="inputbox" name="cvv" id="cvv" required />
+                        <p id="alert-cvv"></p>
+                    </div>
+                    <p></p>
+                    <button type="submit" class="button">CheckOut</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+        e.preventDefault()
+        var name = document.getElementById("name").value
+        var cardNo = document.getElementById("card_number").value
+        var expiry = document.getElementById("exp_date").value
+        var cvv = document.getElementById("cvv").value
+        var valid = true;
+
+        if (cardNo != 12345) {
+            document.getElementById("alert-card").textContent = "Card No. is wrong"
+            document.getElementById("alert-card").style.color = "red"
+            document.getElementById("card_number").style.border = "1px solid red"
+            valid = false
+        } else {
+            document.getElementById("alert-card").textContent = ""
+            document.getElementById("card_number").style.border = "none"
+            valid = true
+        }
+
+        if (expiry != "09/90") {
+            document.getElementById("alert-expiry").textContent = "Card Expiry Date is wrong"
+            document.getElementById("alert-expiry").style.color = "red"
+            document.getElementById("exp_date").style.border = "1px solid red"
+            valid = false
+        } else {
+            document.getElementById("alert-expiry").textContent = ""
+            document.getElementById("exp_date").style.border = "none"
+            valid = true
+        }
+
+        if (cvv != 000) {
+            document.getElementById("alert-cvv").textContent = "CVV is wrong"
+            document.getElementById("alert-cvv").style.color = "red"
+            document.getElementById("cvv").style.border = "1px solid red"
+            valid = false
+        } else {
+            document.getElementById("alert-cvv").textContent = ""
+            document.getElementById("cvv").style.border = "none"
+            valid = true
+        }
+
+        if (name != "Atul") {
+            document.getElementById("alert-name").textContent = "Card Holder name is wrong"
+            document.getElementById("alert-name").style.color = "red"
+            document.getElementById("name").style.border = "1px solid red"
+            valid = false
+        } else {
+            document.getElementById("alert-name").textContent = ""
+            document.getElementById("name").style.border = "none"
+            valid = true
+        }
+
+        if (valid == true) {
+            window.location.href = "success.html"
+        }
+
+    })
+</script>

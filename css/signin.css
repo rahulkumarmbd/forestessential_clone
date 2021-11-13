@@ -1,0 +1,322 @@
+/* Css for signIn Page */
+
+.signInDiv img {
+    margin-left: 200px;
+    display: inline-block;
+}
+
+.calluna {
+    font-size: 27px;
+    letter-spacing: 1.4px;
+    font-family: "Calluna";
+    color: black;
+}
+
+.calibre {
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    color: black;
+}
+
+.signIn-username1 {
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 11px;
+    line-height: 1;
+    color: grey;
+    font-weight: 390;
+}
+
+.signInDiv {
+    margin-top: 16px;
+    width: 99%;
+    height: 800px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.signIn {
+    width: 800px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    margin-top: 10px;
+    border: 0px;
+}
+
+.container2 {
+    display: grid;
+    width: 99%;
+    padding-top: 25px;
+    border-top: 1px solid rgb(201, 201, 201);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-gap: 20px;
+}
+
+.signIn-email {
+    padding: 5px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 40px;
+}
+
+.signInPage-btn {
+    margin-left: 0px;
+    margin-top: 19px;
+    width: 48.5%;
+    height: 48px;
+    background-color: white;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.info-signInPage-para-div {
+    width: 400px;
+    height: 50px;
+    margin-left: 3px;
+    margin-top: 35px;
+}
+
+.social-login {
+    width: 55%;
+    margin: 70px auto;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebook-login>div img,
+.google-login img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.google-login {
+    width: 44%;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid red;
+    background-color: #e04a39;
+    padding-right: 15px;
+    border-radius: 3px;
+}
+
+.facebook-login {
+    width: 44%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #365196;
+    padding-right: 15px;
+    border-radius: 3px;
+}
+
+.fa {
+    padding: 3px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background: #365196;
+    color: white;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+#google1 {
+    background-color: white;
+    padding: 7px;
+}
+
+#mainDivTop {
+    display: flex;
+    margin: auto;
+    width: 700px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+#facebook {
+    font-size: 15px;
+    background: #3b5998;
+    color: white;
+    vertical-align: top;
+    width: 220px;
+    padding: 10px;
+}
+
+#google {
+    font-size: 15px;
+    background: #df4b38;
+    color: white;
+    vertical-align: top;
+    width: 225px;
+    padding: 8 px;
+}
+
+.signInPage-para {
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 14px;
+}
+
+.signInPage-btn:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+/* signin media query */
+
+@media (min-width: 0px) and (max-width: 500px) {
+    .social-login {
+        width: 100%;
+        margin: 50px auto;
+        height: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .google-login {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid red;
+        background-color: #e04a39;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    .facebook-login {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #365196;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    .signInDiv {
+        width: 99%;
+        height: 850px;
+        margin: auto;
+    }
+    .signIn {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        border: 0px;
+    }
+    .container2 {
+        display: grid;
+        width: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 90px;
+        padding: 5px;
+    }
+    .signInPage-btn {
+        width: 99%;
+        height: 48px;
+        background-color: white;
+        border: 1px solid rgb(201, 201, 201);
+    }
+    .info-signInPage-para-div {
+        width: auto;
+        height: 60px;
+        margin-left: 3px;
+        margin-top: 35px;
+    }
+    .email-div {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .email-div {
+        margin-top: 10px;
+    }
+    .google-login {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid red;
+        background-color: #e04a39;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    .facebook-login {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #365196;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    .social-login {
+        width: 90%;
+        margin: 50px auto;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .signIn-email {
+        padding: 5px;
+        border: 1px solid grey;
+        width: 100%;
+        height: 40px;
+    }
+    .container2 {
+        display: grid;
+        width: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 90px;
+        padding: 5px;
+    }
+    .signInDiv {
+        width: 99%;
+        height: 850px;
+        margin: auto;
+    }
+    .signIn {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        border: 0px;
+    }
+    .signInPage-btn {
+        width: 99%;
+        height: 48px;
+        background-color: white;
+        border: 1px solid rgb(201, 201, 201);
+    }
+    .info-signInPage-para-div {
+        width: auto;
+        height: 60px;
+        margin-left: 3px;
+        margin-top: 35px;
+    }
+}

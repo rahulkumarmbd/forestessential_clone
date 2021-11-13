@@ -1,0 +1,315 @@
+/* CSS for signup page */
+
+.main {
+    margin: auto;
+    width: 800px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+#one {
+    font-size: 25px;
+    letter-spacing: 1.4px;
+    font-family: "Calluna";
+}
+
+.social-login {
+    width: 55%;
+    margin: 70px auto;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebook-login>div img,
+.google-login img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.google-login {
+    width: 44%;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid red;
+    background-color: #e04a39;
+    padding-right: 15px;
+    border-radius: 3px;
+}
+
+.facebook-login {
+    width: 44%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #365196;
+    padding-right: 15px;
+    border-radius: 3px;
+}
+
+.fa {
+    padding: 3px;
+    font-size: 20px;
+    width: 27px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background: #365196;
+    color: white;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+.icon-text p {
+    margin-top: 20px;
+}
+
+#google1 {
+    background-color: white;
+    padding: 7px;
+}
+
+#three {
+    font-size: 15px;
+    background: #3b5998;
+    color: white;
+    vertical-align: top;
+    width: 200px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#fore {
+    font-size: 15px;
+    background: #df4b38;
+    color: white;
+    vertical-align: top;
+    width: 200px;
+    border-radius: 5px;
+    font-weight: 25px;
+    padding: 2px;
+}
+
+#five {
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#t {
+    width: 350px;
+    display: inline-block;
+}
+
+#a {
+    height: 50px;
+}
+
+#aa {
+    width: 350px;
+    height: 50px;
+}
+
+#firstname {
+    width: 350px;
+    height: 47px;
+}
+
+#email_address {
+    width: 350px;
+    height: 50px;
+}
+
+#number {
+    width: 350px;
+    height: 50px;
+}
+
+#t2 {
+    display: flex;
+    padding: 2px;
+}
+
+#t1 {
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+}
+
+#password {
+    width: 350px;
+    height: 50px;
+}
+
+#passwordconfirmation {
+    width: 350px;
+    height: 50px;
+}
+
+#aaa {
+    width: 750px;
+    height: 50px;
+}
+
+#aaa:hover {
+    color: white;
+    background-color: black;
+}
+
+#secoundname {
+    width: 350px;
+    height: 47px;
+}
+
+#box {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    width: 99%;
+    margin-top: 25px;
+}
+
+#firstbox {
+    width: 350px;
+}
+
+#secoundbox {
+    width: 350px;
+}
+
+#no {
+    padding: 5px;
+    background-color: #f4f4f4;
+    height: 25px;
+    width: 350px;
+    text-align: justify;
+}
+
+#t3 {
+    margin-left: 5px;
+}
+
+.color {
+    color: red;
+}
+
+
+/* signin media query */
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    #box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .main {
+        margin: 0px 10px;
+        width: auto;
+        text-align: justify;
+    }
+    .social-login {
+        width: 100%;
+        margin: 50px auto;
+        height: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .google-login {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid red;
+        background-color: #e04a39;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    .facebook-login {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #365196;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    #firstbox,
+    #secoundbox,
+    #t,
+    input,
+    #aa {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .google-login {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid red;
+        background-color: #e04a39;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    .facebook-login {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #365196;
+        padding-right: 15px;
+        border-radius: 3px;
+        height: 30px;
+    }
+    .social-login {
+        width: 90%;
+        margin: 50px auto;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .main {
+        margin: auto;
+        padding: 0px 20px;
+        width: auto;
+        text-align: justify;
+    }
+    #firstbox,
+    #secoundbox,
+    #t,
+    input,
+    #aa {
+        width: 100% !important;
+    }
+}
