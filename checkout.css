@@ -1,0 +1,223 @@
+#checkoutbox{   
+    gap: 10px;
+    width: 900px;
+    height: 1600px;
+    margin: auto;
+}
+#emailinput{
+    
+    width: 400px;
+    height: 50px;
+}
+#titleinput{
+    
+    width: 400px;
+    height: 50px;
+}
+#firstinput{
+    
+    width: 400px;
+    height: 50px;
+}
+#lastinput{
+    
+    width: 400px;
+    height: 50px;
+}
+#streetinput{
+    
+    width: 400px;
+    height: 50px;
+}
+#addinput{
+   
+    width: 400px;
+    height: 50px;
+}
+#cityinput{
+    width: 400px;
+    height: 50px;
+}
+#stateinput{
+    width: 400px;
+    height: 50px;
+}
+#pincodeinput{
+    width: 400px;
+    height: 50px;
+}
+#countryinput{
+    width: 400px;
+    height: 50px;
+}
+#phoneinput{
+    width: 400px;
+    height: 50px;
+}
+#checkoutbox1{
+    display: grid;
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    width: 99%;
+    grid-template-columns: auto auto;
+    grid-template-rows: 290px;
+    grid-gap: 20px;
+    height: 100px;
+    margin-top: 15px;
+} 
+@media (min-width:0px) and (max-width:600px){
+#checkoutbox1{
+        display: grid;
+        width: 80%;
+        
+        grid-template-columns: 400px ;
+        grid-template-rows: 90px 90px ;
+        
+        height: 250px;
+        padding-right: 10px;
+        padding-right: 10px;
+        padding:2px;
+        }
+  
+}
+.emaildiv{
+    
+    width: 800px;
+    height: 150px;
+}
+.titlediv{
+   
+    width: 450px;
+    height: 100px;
+}
+.firstdiv{
+    
+    width: 450px;
+    height: 100px;
+}
+.lastdiv{
+    
+    width: 800px;
+    height: 110px;
+}
+.streetdiv{
+    
+    width: 450px;
+    height: 100px;
+}
+.addindiv{
+    
+    width: 450px;
+    height: 100px;
+}
+.citydiv{
+    
+    width: 450px;
+    height: 100px;
+}
+.statediv{
+    
+    width: 450px;
+    height: 100px;
+}
+.pincodediv{
+   
+    width: 450px;
+    height: 120px;
+}
+.countrydiv{
+    
+    width: 450px;
+    height: 120px;
+}
+.phonediv{
+     width: 800px;
+    height: 110px;
+}
+.containerfix {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .containerfix input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containerfix:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .containerfix input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .containerfix input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .containerfix .checkmark:after {
+       top: 4.5px;
+      left: 4.5px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: white;
+  }
+  .itemtotal{
+      display: grid;
+      letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    width: 99%;
+    grid-template-columns: auto auto;
+    grid-template-rows: 290px;
+    grid-gap: 10px;
+    height: 50px;
+    margin-top: 15px;
+  }
+ .checkoutbtn{
+     width: 900px;
+     height: 50px;
+ }
+ P {
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+  }
