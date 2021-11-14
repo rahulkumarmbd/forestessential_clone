@@ -1,0 +1,291 @@
+#checkoutbox {
+    gap: 10px;
+    height: auto;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#checkout-wrapper {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+#emailinput {
+    width: 400px;
+    height: 50px;
+}
+
+#titleinput {
+    width: 400px;
+    height: 50px;
+}
+
+#firstinput {
+    width: 400px;
+    height: 50px;
+}
+
+#lastinput {
+    width: 400px;
+    height: 50px;
+}
+
+#streetinput {
+    width: 400px;
+    height: 50px;
+}
+
+#addinput {
+    width: 400px;
+    height: 50px;
+}
+
+#cityinput {
+    width: 400px;
+    height: 50px;
+}
+
+#stateinput {
+    font-size: 13px;
+    padding-left: 10px;
+    width: 400px;
+    height: 50px;
+}
+
+#pincodeinput {
+    width: 400px;
+    height: 50px;
+}
+
+#countryinput {
+    font-size: 13px;
+    padding-left: 10px;
+    width: 400px;
+    height: 50px;
+}
+
+#phoneinput {
+    width: 400px;
+    height: 50px;
+}
+
+#checkoutbox1 {
+    display: grid;
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    width: 99%;
+    grid-template-columns: auto auto;
+    grid-template-rows: 290px;
+    grid-gap: 20px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.emaildiv {
+    padding: 20px 0px;
+    border-top: 1px solid rgb(199, 199, 199);
+}
+
+.titlediv {
+    height: 100px;
+}
+
+.firstdiv {
+    height: 100px;
+}
+
+.lastdiv {
+    width: 800px;
+    height: 110px;
+}
+
+.streetdiv {
+    height: 100px;
+}
+
+.addindiv {
+    height: 100px;
+}
+
+.citydiv {
+    height: 100px;
+}
+
+.statediv {
+    height: 100px;
+}
+
+.pincodediv {
+    height: 120px;
+}
+
+.countrydiv {
+    height: 120px;
+}
+
+.phonediv {
+    width: 800px;
+    height: 110px;
+}
+
+.containerfix {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.containerfix input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.containerfix:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.containerfix input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.containerfix input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.containerfix .checkmark:after {
+    top: 4.5px;
+    left: 4.5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+.itemtotal {
+    display: grid;
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+    width: 99%;
+    grid-template-columns: auto auto;
+    grid-template-rows: 290px;
+    grid-gap: 10px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.checkoutbtn {
+    width: 100%;
+    height: 50px;
+}
+
+.checkoutbtn:hover {
+    color: white !important;
+    background-color: black !important;
+}
+
+P {
+    letter-spacing: 1.8px;
+    font-family: "calibre";
+    font-size: 12px;
+    line-height: 1;
+}
+
+@media (min-width:0px) and (max-width:700px) {
+    #checkout-wrapper {
+        height: auto;
+        margin: auto;
+        padding-left: 0px 30px;
+        margin-bottom: 80px;
+    }
+    #checkoutbox {
+        gap: 10px;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    #checkoutbox1 {
+        display: grid;
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 90px;
+        height: 250px;
+        padding-right: 10px;
+        padding-right: 10px;
+        padding: 2px;
+    }
+    #checkoutbox {
+        gap: 10px;
+        height: auto;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+@media (min-width:701px) and (max-width:1020px) {
+    #checkout-wrapper {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding-left: 0px 30px;
+        margin-bottom: 80px;
+    }
+    #checkoutbox1 {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(150px, 1fr);
+        padding-right: 10px;
+        padding-right: 10px;
+        padding: 2px;
+    }
+}

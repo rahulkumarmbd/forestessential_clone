@@ -6,6 +6,9 @@ var lipDot3 = document.querySelector(".dot3");
 var lipDot4 = document.querySelector(".dot4");
 var lipDot5 = document.querySelector(".dot5");
 
+
+console.log("working hello")
+
 lipDot1.addEventListener("click", function() {
     lipimage.setAttribute(
         "src",

@@ -159,22 +159,42 @@ averageRating.textContent = sumOfReviewerRating / productData.reviews.length + "
 var plusBtn = document.querySelector(".num-of-items > .plus");
 var minusBtn = document.querySelector(".num-of-items > .minus");
 var displayItemsNum = document.querySelector(".num-of-items > input");
-plusBtn.addEventListener("click", function() {
+displayItemsNum.value = localStorage.getItem(productData.id) || 1;
+plusBtn.addEventListener("click", function () {
     displayItemsNum.value = Number(displayItemsNum.value) + 1;
-})
-minusBtn.addEventListener("click", function() {
+    localStorage.setItem(productData.id, displayItemsNum.value);
+  });
+  minusBtn.addEventListener("click", function () {
     displayItemsNum.value = Number(displayItemsNum.value) - 1;
+    localStorage.setItem(productData.id, displayItemsNum.value);
     if (displayItemsNum.value < 1) {
-        displayItemsNum.value = 1;
-        alert("Items should be greater or equals to 1")
+      displayItemsNum.value = 1;
+      localStorage.setItem(productData.id, displayItemsNum.value);
+      alert("Items should be greater or equals to 1");
     }
-})
+  });
 
 //cart localstorage
 var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-document.getElementById("alert-success").textContent = ""
+document.getElementById("alert-success").textContent = "";
 document.querySelector(".add-to-bag-btn-div > button").addEventListener("click", function(e) {
-    cartItems.push(productData);
+    var out = "not found";
+    cartItems.map((item) => {
+        if(item.id == productData.id && localStorage.getItem("prevProductCount") == localStorage.getItem(productData.id)){
+            out = "found";
+        }
+    })
+    if(out == "not found"){
+        cartItems.map((item,index) =>{
+            if(item.id == productData.id){
+                cartItems.splice(index,1);
+            }
+        });
+        cartItems.push(productData);
+    }
+    else{
+        alert("Product is already added into your cart");
+    }
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
 
@@ -186,5 +206,5 @@ document.querySelector(".add-to-bag-btn-div > button").addEventListener("click",
         document.getElementById('cart-items-mob').textContent = cartItems.length;
         subTotal = 0;
         checkCartLenth(cartItems)
-    }, 2000);
+    }, 1000);
 })

@@ -51,7 +51,6 @@ function signIn() {
     } else {
         for (var i = 0; i < regdUsers.length; i++) {
             if (regdUsers[i].emailAddress == email.value && regdUsers[i].pass == pass.value) {
-
                 window.location.href = "landingPage.html";
                 signInId = "found";
             }

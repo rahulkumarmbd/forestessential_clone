@@ -188,6 +188,7 @@
     height: 45px !important;
     text-align: center;
     background-color: #fbf9f9;
+    cursor: pointer;
 }
 
 .print-text {

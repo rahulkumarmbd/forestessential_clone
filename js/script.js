@@ -26,7 +26,7 @@ var subTotal = 0;
 var buketItems = document.getElementById("buket-items");
 
 function checkCartLenth(cartItems) {
-
+    
     if (cartItems.length == 0) {
         document.getElementById("emptyBag").style.display = "flex";
         document.getElementById("emptyBag").style.justifyContent = "space-between";
@@ -46,6 +46,7 @@ function checkCartLenth(cartItems) {
             hide[i].style.display = "block"
         }
         cartItemsBag(cartItems);
+        
     }
 }
 
@@ -79,8 +80,11 @@ function cartItemsBag(cartItems) {
         var p4 = document.createElement("p");
         p3.setAttribute("class", "print-text")
         p4.setAttribute("class", "print-text");
-        p3.textContent = "qty:1";
-        p4.textContent = "₹ " + item.price;
+        var p3Value = localStorage.getItem(item.id) || 1;
+        p3.textContent = "qty:" + p3Value;
+        console.log(p3Value);
+        localStorage.setItem("prevProductCount",p3Value);
+        p4.textContent = "₹ " + item.price*p3Value|| item.price;
         div2.append(p3, p4)
         titleDiv.append(p1, div1, div2);
 
@@ -89,12 +93,15 @@ function cartItemsBag(cartItems) {
         p5.setAttribute("class", "buket-trash-icon");
         p5.innerHTML = ' <i class="fa fa-trash-o" style="font-size:24px"></i>';
         p5.style.cursor = "pointer";
+        
         p5.addEventListener("click", function() {
-            removeFromBag(index);
+            
+            removeFromBag(cartItems,index);
+            localStorage.removeItem(item.id);
         })
         div3.append(p5);
 
-        subTotal += item.price;
+        subTotal += item.price*p3Value;
         document.getElementById("subTotal").textContent = "₹ " + subTotal
 
         buketItem.append(imgDiv, titleDiv, div3);
@@ -103,7 +110,7 @@ function cartItemsBag(cartItems) {
     })
 }
 
-function removeFromBag(index) {
+function removeFromBag(cartItems,index) {
     cartItems.splice(index, 1);
     localStorage.setItem("cartItems", JSON.stringify(cartItems))
     subTotal = 0;

@@ -1,4 +1,27 @@
-/* header CSS */
+/* * header CSS */
+
+header {
+  z-index: 999;
+}
+
+.calluna {
+  font-size: 26px;
+  letter-spacing: 1.4px;
+  font-family: "Calluna";
+  font-weight: 400;
+}
+
+.calibre {
+  letter-spacing: 1.8px;
+  font-family: "calibre";
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+#header-wrapper {
+  height: 220px;
+}
 
 body {
   width: 100%;
@@ -6,7 +29,7 @@ body {
   padding: 0px;
   margin: auto;
   position: relative;
-  max-width: 2000px;
+  max-width: 1700px;
 }
 
 header {
@@ -54,7 +77,7 @@ header > .topbar {
 
 header > .wrap-div {
   grid-area: 2;
-  height: 120px;
+  height: auto;
   width: 1240px;
   padding: 10px 0px;
   margin: auto;
@@ -384,10 +407,10 @@ a {
 
 .sidenav a {
   font-family: "calibre";
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 12px;
-  color: black;
+  color: rgb(120, 120, 120);
   display: block;
   transition: 0.3s;
 }
@@ -796,12 +819,12 @@ a {
   .sidenav {
     padding-top: 15px;
   }
-  .sidenav a {
-    font-size: 18px;
-  }
 }
 
 @media screen and (min-width: 980px) and (max-width: 1290px) {
+  #header-wrapper {
+    height: 140px;
+  }
   header > .wrap-div {
     grid-area: 2;
     height: 90px;
@@ -852,6 +875,9 @@ a {
 }
 
 @media screen and (min-width: 600px) and (max-width: 979px) {
+  #header-wrapper {
+    height: 120px;
+  }
   .shopping-cart-mobile {
     width: 18px;
   }
@@ -910,6 +936,9 @@ a {
 }
 
 @media screen and (min-width: 200px) and (max-width: 599px) {
+  #header-wrapper {
+    height: 100px;
+  }
   .shopping-cart-mobile {
     width: 14px;
   }
@@ -993,117 +1022,9 @@ a {
   }
 }
 
-/* css for imageSlider  */
-
-/* Slideshow container */
-
-.slideshow-container {
-  margin: auto;
-  margin-top: 211px;
-}
-
-/* Hide the images by default */
-
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  margin-top: 13%;
-  padding: 11px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.prev,
-.next,
-.dot {
-  opacity: 0;
-}
-
-.slideshow-container:hover .dot,
-.slideshow-container:hover .prev,
-.slideshow-container:hover .next {
-  opacity: 1;
-}
-
-/* The dots/bullets/indicators */
-
-.navigationDots {
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-}
-
-.dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 4px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  z-index: 999;
-  transform: translateY(-50px);
-}
-
-.mySlides img {
-  width: 100%;
-}
-
-.active,
-.dot:hover {
-  background-color: white;
-  display: block;
-}
-
-@media screen and (max-width: 1200px) {
-  .slideshow-container {
-    display: none;
-  }
-}
+/* header css ends */
 
 /* CSS FOR PRODUCTS */
-
-.calluna {
-  font-size: 36px;
-  letter-spacing: 1.4px;
-  font-family: "Calluna";
-  color: black;
-}
-
-.calibre {
-  letter-spacing: 1.8px;
-  font-family: "calibre";
-  font-size: 12px;
-  line-height: 1;
-  color: black;
-}
 
 .product-item-heart {
   font-size: 23px;
@@ -1115,7 +1036,7 @@ a {
 }
 
 .products-items {
-  width: 95%;
+  width: 100%;
   margin: auto;
   margin-top: 50px;
   padding-bottom: 60px;
@@ -1209,9 +1130,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .products-items {
-    margin-top: 150px;
-  }
   #products-items-2 {
     margin-top: 70px;
   }
@@ -1232,436 +1150,138 @@ a {
   }
 }
 
-/* CSS FOR BOX-SLIDER */
-#slider-products {
-  margin-top: 10px;
-}
-.slider-box {
-  width: 95%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto;
-  grid-column-gap: 20px;
-}
-.calluna {
-  font-size: 36px;
-  letter-spacing: 1.4px;
-  font-family: "Calluna";
-}
-.slider-image-box > img {
-  width: 100%;
-  height: 180px;
-}
-.box-slider-bar {
-  width: 14px;
-  background: black;
-  height: 1px;
-}
-.box-slider-bar-div,
-.box-slider-categories,
-.box-slider-heading-div {
-  width: 95%;
-  margin: auto;
-}
-.calibre {
-  letter-spacing: 1.8px;
-  font-family: "calibre";
-  font-size: 12px;
-  line-height: 1;
-}
-.shop-now-slider {
-  padding: 10px 0px;
-  width: fit-content;
-  border-bottom: 1px solid black;
-  cursor: pointer;
-}
-.slider-product-name {
-  padding-top: 25px;
-}
-.slider-box-prev-btn,
-.slider-box-next-btn {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  margin-top: 70px;
-  padding: 11px;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.slider-box-next-btn {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.slider-box-prev-btn:hover,
-.slider-box-next-btn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+/* css for cart body */
+
+.cart-container,
+.also-like {
+  width: 83%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.slider-box-prev-btn,
-.slider-box-next-btn {
-  opacity: 0;
-}
-#slider-products:hover .slider-box-prev-btn,
-#slider-products:hover .slider-box-next-btn {
-  opacity: 1;
+.basket {
+  width: 60%;
 }
 
-@media screen and (max-width: 1100px) {
-  #slide-box4 {
-    display: none;
-  }
-  .slider-box {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  .slider-box-next-btn {
-    margin-top: -100px;
-  }
+.summary {
+  width: 30%;
 }
-@media screen and (max-width: 850px) {
-  #slide-box4 {
-    display: none;
-  }
-  #slide-box3 {
-    display: none;
-  }
-  .slider-box {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  .slider-box-next-btn {
-    margin-top: -100px;
-  }
+
+.cart-item-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  border-top: 1px solid rgb(189, 189, 189);
+  border-bottom: 1px solid rgb(189, 189, 189);
 }
-@media screen and (max-width: 600px) {
-  #slide-box2 {
-    display: none;
-  }
-  #slide-box3 {
-    display: none;
-  }
-  #slide-box4 {
-    display: none;
-  }
-  #slider-products {
-    margin-top: 90px;
-  }
-  .slider-box {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  .slider-box-next-btn {
-    margin-top: -100px;
-  }
-}
-/* CSS FOR APPOINTMENT LAYOUT */
-.appointmentDiv {
+.num-of-items > button {
+  height: 45px !important;
+  width: 40px !important;
+  transition: none !important;
+  margin: 0px 4px;
+  border: 1px solid #bfbfbf;
   background-color: #fbf9f9;
-  margin: 100px 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
-.appointmentDiv > div {
-  width: 93%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 48% 48%;
-  grid-template-rows: auto;
+.num-of-items > input {
+  height: 41px !important;
+  width: 60px !important;
+  text-align: center;
+}
+.order-summary {
+  padding: 20px 0px;
+  border-top: 1px solid rgb(189, 189, 189);
+}
+
+.order-summary input {
+  width: 98%;
+}
+
+.row-items {
+  display: flex;
   justify-content: space-between;
 }
-.info-appointment {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0px;
-}
-.appointment-info-bar {
-  height: 1px;
-  width: 20px;
-  border-bottom: 1px solid black;
-}
 
-.appointment-bar {
-  width: fit-content;
-  padding: 10px 0px;
-  border-bottom: 1px solid black;
-}
-.info-appointment-info > p {
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 1.4px;
-  line-height: 24px;
-}
-.appointment-heading > p {
-  font-size: 36px;
-  letter-spacing: 1.8px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  line-height: 48px;
-  font-family: "Calluna";
-}
-@media screen and (max-width: 992px) {
-  .appointmentDiv > div {
-    display: grid;
-    grid-template-columns: 96%;
-    grid-template-rows: auto auto;
-  }
-  .appointment-heading > p {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-/* CSS FOR INFO-SLIDER */
-
-#trending {
-  width: 100%;
-}
-
-.calluna {
-  font-size: 36px;
-  letter-spacing: 1.4px;
-  font-family: "Calluna";
-  font-weight: 400;
-}
-
-.calibre {
-  letter-spacing: 1.8px;
-  font-family: "calibre";
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-#info-slider {
-  background-image: url(https://images.forestessentialsindia.com/pub/media/testimonials/ayurvedic-testimonial02nove21.jpg);
-  margin: 20px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 98px 50px;
-  background-position: center;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: auto;
-  grid-gap: 1%;
-}
-
-.info-slider-bar-top {
-  width: 20px;
-  height: 1px;
-  margin-bottom: 5px;
-  border-top: 1px solid black;
-}
-
-.info-slider-heading {
-  padding: 0px 50px;
-}
-
-.info-slider-top-para,
-.info-slider-bar-top-div {
-  padding: 0px 50px;
-}
-
-.slide-info {
-  background: rgba(251, 249, 249, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px 12px;
-  margin: 0px 0.4%;
-}
-
-.slide-para-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  width: 100%;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-.slide-para-box > p {
-  width: 100%;
-  height: 100%;
-  margin: 1px 0px;
-  color: #000;
-}
-
-.slide-para-box::-webkit-scrollbar {
-  height: 50px;
-  width: 3px;
-  border-radius: 6px;
-}
-
-/* Track */
-
-.slide-para-box::-webkit-scrollbar-track {
-  background: rgba(124, 124, 124, 0.6);
-}
-
-/* Handle */
-
-.slide-para-box::-webkit-scrollbar-thumb {
-  background: rgba(119, 119, 119, 0.533);
-}
-
-.fa-quote-left:before {
-  content: "\f10d";
-}
-
-.inverted-symbol {
-  color: #888888;
-  height: 20px;
-  width: 20px;
-}
-
-.symbol {
-  display: flex;
-  justify-content: center;
+.imp-note {
   margin: 10px 0px;
 }
 
-.info-slider-bar > .bottom-bar {
-  height: 1px;
-  width: 20px;
-  border-bottom: 2px solid black;
-  margin: 15px 0px;
-}
-
-.info-slider-bar {
+#cart-button {
   width: 100%;
-  display: flex;
-  justify-content: left;
+  border: 1px solid black;
 }
 
-.personal-info-slider {
-  width: 100%;
-  margin: 0px;
+#cart-button:hover {
+  border: 1px solid black;
+  color: white !important;
+  background-color: black !important;
 }
 
-.personal-info-slider > .info-slider-name {
-  margin-left: 0px;
-  margin-top: 10px;
+.cart-remove2 {
+  display: none;
 }
 
-.info-slider-name > h3 {
-  color: #2d2c2c;
-  font-weight: 700;
-  margin: 0px;
-  font-size: 14px;
-}
-
-.info-slider-name > p {
-  margin: 0px;
-  margin-top: 3px;
-}
-
-@media screen and (max-width: 1200px) {
-  #info-slider {
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 3%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #info-slider {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, auto);
-    grid-gap: 2%;
-  }
-  .calluna {
-    font-size: 24px;
-  }
-}
-
-/* CSS FOR AYURVEDA-LAYOUT */
-
-.ayurvedaDiv {
-  background-image: url(https://cdn.forestessentialsindia.com/pub/media/cms_images/About-home-new.jpg);
-  background-size: cover;
-  padding: 30px 0 60px;
-}
-
-.ayurvedaDiv > div,
-.info-ayurveda-div {
-  width: 94%;
-  margin: auto;
-}
-
-.ayurvedaHeading > p {
-  width: 40%;
-  font-size: 48px;
-  letter-spacing: 1.8px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  line-height: 56px;
-  font-family: "Calluna";
-}
-
-.ayurveda-bar {
-  height: 1px;
-  width: 20px;
-  border-top: 1px solid black;
-  margin: 10px 0px;
-}
-
-.discover-ayurveda {
-  width: fit-content;
-  cursor: pointer;
-  border-bottom: 1px solid #bfbfbf;
-}
-
-.info-ayurveda-heading > p {
-  font-size: 36px;
-  letter-spacing: 1.8px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  line-height: 48px;
-  font-family: "Calluna";
-}
-
-.info-ayurveda-social {
-  margin-bottom: 50px;
-  letter-spacing: 1.4px;
-  color: #000;
-}
-
-@media screen and (max-width: 1200px) {
-  .ayurvedaHeading > p {
-    width: 50%;
-    font-size: 40px;
-    line-height: 40px;
-  }
-  .info-ayurveda-heading > p {
-    font-size: 26px;
-    line-height: 34px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .ayurvedaDiv {
-    margin-top: 100px;
-  }
-  .ayurvedaHeading > p {
+@media screen and (max-width: 1026px) {
+  .cart-container,
+  .also-like {
     width: 90%;
-    font-size: 36px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .info-ayurveda-heading > p {
+  .basket {
+    width: 100%;
+  }
+  .summary {
+    width: 100%;
+  }
+  .cart-item-list {
+    display: block;
+    padding: 20px 0px;
+    border-top: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid rgb(189, 189, 189);
+  }
+  .cart-item-title {
+    margin-bottom: 25px;
+  }
+  .num-of-items {
+    margin-bottom: 15px;
+  }
+  .num-of-items > button {
+    height: 35px !important;
+    width: 40px !important;
+    transition: none !important;
+    border: 1px solid #bfbfbf;
+    background-color: #ffffff;
     font-size: 20px;
-    line-height: 26px;
+  }
+  .num-of-items > input {
+    height: 35px !important;
+    width: 60px !important;
+    text-align: center;
+    font-size: 14px;
+  }
+  .cart-remove {
+    display: none;
+  }
+  .cart-img {
+    position: relative;
+  }
+  .cart-img > img{
+    width: 100%;
+  }
+  .cart-remove2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
   }
 }
+
+/* css for cart body */
 
 /* This is the CSS for footer */
 

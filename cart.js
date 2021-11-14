@@ -44,8 +44,8 @@ var cartItemsData = JSON.parse(localStorage.getItem("cartItems")) || [];
 console.log(cartItemsData);
 displayItemsToBuy();
 // creating items for cart
-function displayItemsToBuy() {
-  cartItemsData.map((cartItemsData, index) => {
+function displayItemsToBuy(){
+cartItemsData.map((cartItemsData,index) => {
     var cartItems = document.querySelector(".cart-items");
     var cartItem = document.createElement("div");
     cartItem.setAttribute("class", "cart-item-list");
@@ -53,7 +53,10 @@ function displayItemsToBuy() {
     //   cartImgDiv.style.flexBasis = "200px";
     cartImgDiv.setAttribute("class", "cart-img");
     var cartImg = document.createElement("img");
-    cartImg.setAttribute("src", cartItemsData.cartImg);
+    cartImg.setAttribute(
+      "src",
+      "https://images.forestessentialsindia.com/pub/media/catalog/product/cache/3a98496dd7cb0c8b28c4c254a98f915a/9/7/9728_hair_thickening_spray_bhringraj_shikakai_130ml_front.png"
+    );
     var cartRemove2 = document.createElement("div");
     cartRemove2.setAttribute("class", "cart-remove2");
     var iTag = document.createElement("i");
@@ -86,18 +89,12 @@ function displayItemsToBuy() {
     var cartRemove = document.createElement("div");
     cartRemove.setAttribute("class", "cart-remove");
     cartRemove.append(iTag);
-    cartRemove.addEventListener("click", function () {
-      deleteCartItemsData(index);
-    });
-    cartItem.append(
-      cartImgDiv,
-      cartItemTitle,
-      btnsOfCart,
-      cartPrice,
-      cartRemove
-    );
+    cartRemove.addEventListener("click",function(){
+        deleteCartItemsData(index);
+    })
+    cartItem.append(cartImgDiv, cartItemTitle, btnsOfCart, cartPrice, cartRemove);
     cartItems.append(cartItem);
-
+  
     var insertingBefore = document.querySelector(".insertingBefore");
     var parentDiv = document.querySelector(".summary");
     var rowItems = document.createElement("div");
@@ -118,9 +115,9 @@ function displayItemsToBuy() {
     rowItemsInnerDiv1.append(rowItemsCount);
     rowItemsInnerDiv2.append(totalAmount);
     rowItems.append(rowItemsCount, totalAmount);
-    rowItems.classList.add("deletingClass");
+    rowItems.classList.add("deletingClass")
     parentDiv.insertBefore(rowItems, insertingBefore);
-
+  
     plusBtnOfCart.addEventListener("click", function () {
       displayProductNum.value = Number(displayProductNum.value) + 1;
       localStorage.setItem(cartItemsData.id, displayProductNum.value);
@@ -151,82 +148,65 @@ function displayItemsToBuy() {
   });
 }
 
-function deleteCartItemsData(index) {
-  cartItemsData.splice(index, 1);
-  document.querySelector("#cart-items-delete").innerHTML = "";
-  localStorage.setItem("cartItems", JSON.stringify(cartItemsData));
-  var elements = document.querySelectorAll(".deletingClass");
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].remove();
-  }
-  displayItemsToBuy();
-  updatingPrices();
-  if (cartItemsData.length == 0) {
-    document.querySelector(".cart-container").innerHTML = "";
-    var h1 = document.createElement("h1");
-    h1.textContent = "Your Cart is Empty!";
-    document.querySelector(".cart-container").append(h1);
-  }
+function deleteCartItemsData(index){
+    cartItemsData.splice(index, 1);
+    document.querySelector("#cart-items-delete").innerHTML = "";
+    localStorage.setItem("cartItems", JSON.stringify(cartItemsData));
+    var elements = document.querySelectorAll(".deletingClass");
+    for(var i=0; i<elements.length; i++){
+        elements[i].remove();
+    }
+    displayItemsToBuy();
+    updatingPrices();
+    if(cartItemsData.length == 0){
+        document.querySelector(".cart-container").innerHTML = "";
+        var h1 = document.createElement("h1");
+        h1.textContent = "Your Cart is Empty!";
+        document.querySelector(".cart-container").append(h1);
+    }
 }
 
-document.querySelector("#cart-button").addEventListener("click", function () {
-  var promoCode = document.querySelector("#promoCode");
-  if(promoCode.value == ""){
-    window.location.href = "checkout.html";
-  }
-
-  if(promoCode.value != "masai30" && promoCode.value != ""){
-    alert("The Promo Code which you have entered is invalid");
-  }
-});
-
 updatingPrices();
-function updatingPrices() {
-  console.log("Yeah");
-  var finalPrice = document.querySelector(".finalPrice");
-  var discountPrice = document.querySelector(".discountPrice") || 0;
-  var promoCode = document.querySelector("#promoCode");
-  var discountPriceCount = localStorage.getItem("discountPriceCount") || 0;
-
-  var promoCodeCount = localStorage.getItem("promoCodeCount") || 0;
-  var sum = 0;
-  for (var i = 0; i < cartItemsData.length; i++) {
-    sum +=
-      cartItemsData[i].price * (localStorage.getItem(cartItemsData[i].id) || 1);
-  }
-  console.log(sum);
-  localStorage.setItem("totalAmount", sum);
-  discountPrice.textContent = "₹" + discountPriceCount + ".00";
-  var updatedFinalPrice = sum - discountPriceCount;
-  localStorage.setItem("finalPriceCount", updatedFinalPrice);
-  finalPrice.textContent =
-    "₹" + localStorage.getItem("finalPriceCount") + ".00";
-  if (promoCodeCount == 2) {
-    localStorage.setItem("checking who are you", "count 2 wala");
-    window.location.href = "checkout.html";
-  }
-  document.querySelector("#cart-button").addEventListener("click", function () {
-    console.log("yes");
-    if (promoCodeCount == 1) {
-      promoCodeCount++;
+function updatingPrices(){
+    console.log("Yeah")
+    var finalPrice = document.querySelector(".finalPrice");
+    var discountPrice = document.querySelector(".discountPrice") || 0;
+    var promoCode = document.querySelector("#promoCode");
+    var discountPriceCount = localStorage.getItem("discountPriceCount") || 0;
+    
+    var promoCodeCount = localStorage.getItem("promoCodeCount") || 0;
+    var sum = 0;
+    for(var i=0; i<cartItemsData.length; i++){
+        sum += cartItemsData[i].price*(localStorage.getItem(cartItemsData[i].id) || 1);
     }
-    if(promoCode.value == "masai30" && promoCodeCount == 0){
-      promoCodeCount++;
-      localStorage.setItem("promoCodeCount", promoCodeCount);
-      discountPriceCount = +sum * 0.3;
-      discountPrice.textContent = "₹" + discountPriceCount + ".00";
-      localStorage.setItem("discountPriceCount", discountPriceCount);
-      updatingPrices();
-      alert(
-        "Your promoCode is activated Successfully and again click on checkout btn to continue"
-      );
-      promoCode.value = "";
-    }
-    else if(promoCode.value == "" && promoCodeCount != 0){
-      localStorage.setItem("your promocodecount is", promoCodeCount);
-      window.location.href = "checkout.html";
-      localStorage.setItem("checking who are you", "count wala nhi hu ");
-    }
-  });
+    console.log(sum);
+    localStorage.setItem("totalAmount", sum);
+    discountPrice.textContent = "₹" + discountPriceCount + ".00";
+    var updatedFinalPrice = sum - discountPriceCount;
+    localStorage.setItem("finalPriceCount", updatedFinalPrice);
+    finalPrice.textContent = "₹" + localStorage.getItem("finalPriceCount") + ".00";
+    document.querySelector("#cart-button").addEventListener("click", function () {
+      console.log("yes");
+      if (promoCodeCount == 1) {
+        window.location.href = "checkout.html";
+        return null;
+      }
+      if (promoCode.value == "masai30" && promoCodeCount == 0) {
+        promoCodeCount++;
+        localStorage.setItem("promoCodeCount", promoCodeCount);
+        discountPriceCount = +sum * 0.3;
+        discountPrice.textContent = "₹" + discountPriceCount + ".00";
+        localStorage.setItem("discountPriceCount", discountPriceCount);
+        updatingPrices();
+        alert(
+          "Your promoCode is activated Successfully and again click on checkout btn to continue"
+        );
+        promoCode.value = "";
+      } else if (promoCode.value == "") {
+        window.location.href = "checkout.html";
+      } else {
+        alert("The Promo Code which you have entered is invalid");
+      }
+    });
 }
 finalPrice.textContent = "₹" + localStorage.getItem("finalPriceCount") + ".00";
